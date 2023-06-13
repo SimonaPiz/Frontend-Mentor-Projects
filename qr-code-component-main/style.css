@@ -1,18 +1,21 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Outfit', sans-serif;
   font-size: 15px;
   background-color: hsl(212, 45%, 89%);
   text-align: center;
+  padding-top: 150px;
 }
 
 #card {
-  width: 300px;
-  margin: 20px auto;
+  width: 320px;
+  margin: 0px auto;
   background-color: white;
-  padding: 12px;
+  padding: 14px 14px 22px 14px;
   border-radius: 15px;
 }
 
@@ -34,4 +37,19 @@ h3 {
 #description {
   font-weight: 400;
   color: hsl(220, 15%, 55%);
+}
+
+@media only screen and (min-width: 320px) and ( max-width: 480px) {
+  body {
+    padding-top: 85px;
+  }
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  margin-top: 50px;
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
 }
