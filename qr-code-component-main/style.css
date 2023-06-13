@@ -3,4 +3,14 @@
 
 body {
   font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  background-color: hsl(212, 45%, 89%);
+}
+
+#card {
+  width: 300px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 12px;
+  border-radius: 15px;
 }
