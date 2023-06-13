@@ -5,6 +5,7 @@ body {
   font-family: 'Outfit', sans-serif;
   font-size: 15px;
   background-color: hsl(212, 45%, 89%);
+  text-align: center;
 }
 
 #card {
@@ -18,4 +19,19 @@ body {
 #card img {
   border-radius: 10px;
   max-width: 100%;
+}
+
+#card h3, #card p {
+  margin: 22px 19px;
+}
+
+h3 {
+  font-weight: 700;
+  color: hsl(218, 44%, 22%);
+  font-size: 22px;
+}
+
+#description {
+  font-weight: 400;
+  color: hsl(220, 15%, 55%);
 }
