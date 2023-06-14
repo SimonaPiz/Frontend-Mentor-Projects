@@ -57,14 +57,15 @@ main {
 
 #main-img {
   width: 48%;
+  height: auto;
   margin-left: 22px;
+  background-image:  url(./assets/images/illustration-sign-up-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
 }
 
-img#img-desk {
-  width: 100%;
-  height: fit-content;
-}
-img#img-mobile {
+img {
   display: none;
 }
 
@@ -165,24 +166,22 @@ button:hover {
   #main-img {
     width: 100%;
     margin: 0;
+    background: none;
   }
   
-  img#img-mobile {
+  img {
     display: block;
     width: 100%;
     height: fit-content;
-  }
-  img#img-desk {
-    display: none;
   }
 
   main h1 {
     font-size: 35px;
   }
 
-    button {
-      font-size: 16px;
-    }
+  button {
+    font-size: 16px;
+  }
 }
 
 /*  --------- success message ----------------*/
