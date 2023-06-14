@@ -30,6 +30,14 @@ div#container {
   box-shadow: -4px 4px 20px 4px rgba(0, 0, 0, 0.3);
 }
 
+main {
+
+}
+
+#main-img {
+  background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+}
+
 
 
 .attribution { 
