@@ -1,4 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  src: local('Roboto'), local('Roboto_Regular'), local('Roboto Regular'), local('Roboto_Bold'), local('Roboto Bold'),
+    url('./assets/fonts/Roboto-Regular.ttf') format('truetype'),
+    url('./assets/fonts/Roboto.woff2') format('woff2'),
+    url('./assets/fonts/Roboto-Bold.ttf') format('truetype'),
+    url('./assets/fonts/Roboto-bold.woff2') format('woff2');
+    
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
 
 * {
   box-sizing: border-box;
@@ -13,8 +24,12 @@
 body {
   background-color: var(--charcoal-grey);
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
+h1 {
+  font-weight: 700;
+}
 p {
   font-size: 16px;
 }
@@ -28,14 +43,18 @@ div#container {
   padding: 24px;
   border-radius: 35px;
   box-shadow: -4px 4px 20px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-flow: row nowrap;
+
 }
 
 main {
-
+  width: 50%;
 }
 
 #main-img {
-  background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+  background: url(./assets/images/illustration-sign-up-desktop.svg) center no-repeat;
+  width: 50%;
 }
 
 
