@@ -81,7 +81,8 @@ ul li::before {
 
 li {
   margin: 7px 0;
-  line-height: 16px;
+  line-height: 22px;
+  display: flex;
 }
 
 main label {
@@ -178,6 +179,7 @@ button:hover {
   main h1 {
     font-size: 35px;
   }
+
 }
 
 /*  --------- success message ----------------*/
