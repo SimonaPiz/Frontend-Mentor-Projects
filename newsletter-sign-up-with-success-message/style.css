@@ -5,8 +5,7 @@
     url('./assets/fonts/Roboto-Regular.ttf') format('truetype'),
     url('./assets/fonts/Roboto.woff2') format('woff2'),
     url('./assets/fonts/Roboto-Bold.ttf') format('truetype'),
-    url('./assets/fonts/Roboto-bold.woff2') format('woff2');
-    
+    url('./assets/fonts/Roboto-bold.woff2') format('woff2');    
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -26,15 +25,15 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: var(--dark-slate-grey);
+  font-size: 16px;
+  line-height: 19px;
 }
 
 h1 {
   font-weight: 700;
   text-align: center;
-  font-size: 40px;
-}
-p {
-  font-size: 16px;
+  font-size: 55px;
+  line-height: 0;
 }
 
 div#container {
@@ -54,6 +53,7 @@ main {
   width: 52%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 #main-img {
@@ -66,6 +66,26 @@ img {
   height: fit-content;
 }
 
+main ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin: 0 0 26px 0;
+}
+ul li::before {
+  content: url('./assets/images/icon-list.svg'); 
+  padding-right: 18px;
+  vertical-align: middle;
+}
+
+li {
+  margin: 7px 0;
+  line-height: 16px;
+}
+
+main label {
+  font-size: 12px;
+  display: block;
+}
 
 .attribution { 
   font-size: 11px; 
