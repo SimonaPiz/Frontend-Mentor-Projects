@@ -99,6 +99,17 @@ input, button {
 
 input:active {
   border: solid 1px var(--grey);
+  outline: none;
+}
+
+input:invalid {
+  border: solid 1px var(--tomato);
+  background-color: hsla(4, 100%, 67%, 0.2);
+  color: var(--tomato);
+}
+
+input:invalid::placeholder {
+  color: var(--tomato);
 }
 
 button {
