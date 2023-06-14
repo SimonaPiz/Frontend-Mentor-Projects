@@ -85,6 +85,34 @@ li {
 main label {
   font-size: 12px;
   display: block;
+  font-weight: bold;
+}
+
+input, button {
+  width: 100%;
+  height: 56px;
+  padding: 20px 24px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: solid 1px var(--grey);
+}
+
+input:active {
+  border: solid 1px var(--grey);
+}
+
+button {
+  border: none;
+  background-color: var(--dark-slate-grey);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:active {
+  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+  box-shadow: -2px 6px 25px #fc894d;
 }
 
 .attribution { 
