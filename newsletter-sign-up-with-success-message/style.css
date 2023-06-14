@@ -25,10 +25,13 @@ body {
   background-color: var(--charcoal-grey);
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  color: var(--dark-slate-grey);
 }
 
 h1 {
   font-weight: 700;
+  text-align: center;
+  font-size: 40px;
 }
 p {
   font-size: 16px;
@@ -36,27 +39,32 @@ p {
 
 div#container {
   background-color: white;
+  padding: 22px;
   max-width: 930px;
-  max-height: 640px;
   width: 80%;
   margin: 100px auto;
-  padding: 24px;
   border-radius: 35px;
   box-shadow: -4px 4px 20px 4px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-flow: row nowrap;
-
 }
 
 main {
-  width: 50%;
+  padding: 40px;
+  width: 52%;
+  display: flex;
+  flex-direction: column;
 }
 
 #main-img {
-  background: url(./assets/images/illustration-sign-up-desktop.svg) center no-repeat;
-  width: 50%;
+  width: 48%;
+  margin-left: 22px;
 }
 
+img {
+  width: 100%;
+  height: fit-content;
+}
 
 
 .attribution { 
