@@ -189,6 +189,10 @@ button:hover {
     font-size: 16px;
   }
 
+  div#success-message {
+    max-width: 100% !important;
+  }
+
   #success-message main {
     flex-grow: 2;
   }
@@ -216,4 +220,9 @@ div#success-message {
 #success-message button {
   width: calc(100% - 80px);
   margin: 0 40px 40px 40px;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
 }
