@@ -41,12 +41,12 @@ h1 {
   margin: calc(50vh - 260px) auto;
   border-radius: 35px;
   box-shadow: -4px 4px 20px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
 }
 
 div#sign-up {  
   max-width: 930px;
   width: 80%;  
-  display: flex;
   flex-flow: row nowrap;
 }
 
@@ -148,6 +148,7 @@ button:hover {
 /* ------------- mobile media query ---------------*/
 @media only screen and (max-width: 900px) {
   div.container {
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     border-radius: 0;
@@ -165,7 +166,7 @@ button:hover {
 
   main {
     width: 100%;
-    padding: 16px;
+    padding: 24px;
   }
 
   #main-img {
@@ -187,11 +188,21 @@ button:hover {
   button {
     font-size: 16px;
   }
+
+  #success-message main {
+    flex-grow: 2;
+  }
+  #success-message button {
+    width: calc(100% - 48px) !important; 
+    margin: 24px !important;
+    flex-grow: 0;
+  }
 }
 
 /*  --------- success message ----------------*/
 div#success-message {  
   max-width: 503px;
+  flex-direction: column;
 }
 
 #success-message main {
@@ -200,4 +211,9 @@ div#success-message {
 
 #success-message img {
   width: 64px;
+}
+
+#success-message button {
+  width: calc(100% - 80px);
+  margin: 0 40px 40px 40px;
 }
