@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  src: local('Roboto'), local('Roboto_Regular'), local('Roboto Regular'), local('Roboto_Bold'), local('Roboto Bold'),
+    url('./assets/fonts/Roboto-Regular.ttf') format('truetype'),
+    url('./assets/fonts/Roboto.woff2') format('woff2'),
+    url('./assets/fonts/Roboto-Bold.ttf') format('truetype'),
+    url('./assets/fonts/Roboto-bold.woff2') format('woff2');    
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+* {
+  box-sizing: border-box;
+  --tomato: hsl(4, 100%, 67%);
+  --dark-slate-grey:  hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+
+  --primary-color: var(--tomato);
+}
+
+body {
+  background-color: var(--charcoal-grey);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: var(--dark-slate-grey);
+  font-size: 16px;
+  line-height: 19px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: normal;
+}
+
+.container {
+  background-color: white;
+  padding: 22px;
+  margin: calc(50vh - 260px) auto;
+  border-radius: 35px;
+  box-shadow: -4px 4px 20px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+}
+
+div#sign-up {  
+  max-width: 930px;
+  width: 80%;  
+  flex-flow: row nowrap;
+}
+
+main {
+  padding: 40px;
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#main-img {
+  width: 48%;
+  height: auto;
+  margin-left: 22px;
+  background-image:  url(./assets/images/illustration-sign-up-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+img#img-mobile {
+  display: none;
+}
+
+main ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin: 0 0 26px 0;
+}
+ul li::before {
+  content: url('./assets/images/icon-list.svg'); 
+  padding-right: 18px;
+  vertical-align: middle;
+}
+
+li {
+  margin: 7px 0;
+  line-height: 22px;
+  display: flex;
+}
+
+main label {
+  font-size: 12px;
+  display: block;
+  font-weight: bold;
+}
+
+input, button {
+  width: 100%;
+  min-height: 56px;
+  padding: 20px 24px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: solid 1px var(--grey);
+}
+
+input:active {
+  border: solid 1px var(--grey);
+  outline: none;
+}
+
+input:invalid {
+  border: solid 1px var(--tomato);
+  background-color: hsla(4, 100%, 67%, 0.2);
+  color: var(--tomato);
+}
+
+input:invalid::placeholder {
+  color: var(--tomato);
+}
+
+button {
+  border: none;
+  background-color: var(--dark-slate-grey);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:active {
+  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+  box-shadow: -2px 6px 25px #fc894d;
+}
+
+button:hover {
+  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  margin: 100px auto;
+  color: var(--grey);
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* ------------- mobile media query ---------------*/
+@media only screen and (max-width: 900px) {
+  div.container {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+  }
+  div#sign-up {
+    width: 100%;
+    flex-flow: column-reverse wrap;
+  }
+  body {
+    background-color: white;
+    margin: 0;
+  }
+
+  main {
+    width: 100%;
+    padding: 24px;
+  }
+
+  #main-img {
+    width: 100%;
+    margin: 0;
+    background: none;
+  }
+  
+  img#img-mobile {
+    display: block;
+    width: 100%;
+    height: fit-content;
+  }
+
+  main h1 {
+    font-size: 35px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  div#success-message {
+    max-width: 100% !important;
+  }
+
+  #success-message main {
+    flex-grow: 2;
+  }
+  #success-message button {
+    width: calc(100% - 48px) !important; 
+    margin: 24px !important;
+    flex-grow: 0;
+  }
+}
+
+/*  --------- success message ----------------*/
+div#success-message {  
+  max-width: 503px;
+  flex-direction: column;
+}
+
+#success-message main {
+  width: 100%;
+}
+
+#success-message img {
+  width: 64px;
+}
+
+#success-message button {
+  width: calc(100% - 80px);
+  margin: 0 40px 40px 40px;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+span#signed-email {
+  font-weight: bold;
+}
