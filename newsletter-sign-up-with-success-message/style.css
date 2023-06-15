@@ -35,14 +35,17 @@ h1 {
   line-height: normal;
 }
 
-div#container {
+.container {
   background-color: white;
   padding: 22px;
-  max-width: 930px;
-  width: 80%;
-  margin: calc(50vh - 250px) auto;
+  margin: calc(50vh - 260px) auto;
   border-radius: 35px;
   box-shadow: -4px 4px 20px 4px rgba(0, 0, 0, 0.3);
+}
+
+div#sign-up {  
+  max-width: 930px;
+  width: 80%;  
   display: flex;
   flex-flow: row nowrap;
 }
@@ -65,7 +68,7 @@ main {
   border-radius: 15px;
 }
 
-img {
+img#img-mobile {
   display: none;
 }
 
@@ -144,13 +147,15 @@ button:hover {
 
 /* ------------- mobile media query ---------------*/
 @media only screen and (max-width: 900px) {
-  div#container {
+  div.container {
     margin: 0;
     padding: 0;
     border-radius: 0;
-    width: 100%;
     border: none;
     box-shadow: none;
+  }
+  div#sign-up {
+    width: 100%;
     flex-flow: column-reverse wrap;
   }
   body {
@@ -169,7 +174,7 @@ button:hover {
     background: none;
   }
   
-  img {
+  img#img-mobile {
     display: block;
     width: 100%;
     height: fit-content;
@@ -185,15 +190,14 @@ button:hover {
 }
 
 /*  --------- success message ----------------*/
-div#success-message {
-  background-color: white;
-  padding: 22px;
+div#success-message {  
   max-width: 503px;
-  margin: calc(50vh - 250px) auto;
-  border-radius: 35px;
-  box-shadow: -4px 4px 20px 4px rgba(0, 0, 0, 0.3);;
 }
 
 #success-message main {
   width: 100%;
+}
+
+#success-message img {
+  width: 64px;
 }
