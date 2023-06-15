@@ -10,36 +10,15 @@
   <script type="text/javascript" src="index.js" defer></script>
 </head>
 <body>
-  <!-- Sign-up form start -->
-  <div id="container">
-    <main>
-      <h1>Stay updated!</h1>
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
-      <ul>
-        <li>Product discovery and building what matters</li>
-        <li>Measuring to ensure updates are a success</li>
-        <li>And much more!</li>
-      </ul>
-      <form action="index.html" method="get">  
-        <label for="email">Email address</label>
-        <input type="email" id="email" name="email" placeholder="email@company.com" required/>
-        <button type="submit">Subscribe to monthly newsletter</button>
-      </form>
-    </main>
-    <div id="main-img">
-      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="imagine preview"/>
-    </div>
-  </div>
-  <!-- Sign-up form end -->
-
   <!-- Success message start -->
   <div id="success-message">
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
+    <main>
+      <h1>Thanks for subscribing!</h1>
+      <p>A confirmation email has been sent to <span id="signed-email"></span>. 
+        Please open it and click the button inside to confirm your subscription.</p>
+      
+      <button type="submit">Dismiss message</button>
+    </main>
   </div>
   <!-- Success message end -->
   
