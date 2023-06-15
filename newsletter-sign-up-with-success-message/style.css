@@ -40,7 +40,7 @@ div#container {
   padding: 22px;
   max-width: 930px;
   width: 80%;
-  margin: 100px auto;
+  margin: calc(50vh - 250px) auto;
   border-radius: 35px;
   box-shadow: -4px 4px 20px 4px rgba(0, 0, 0, 0.3);
   display: flex;
@@ -137,7 +137,7 @@ button:hover {
 .attribution { 
   font-size: 11px; 
   text-align: center; 
-  margin-top: 100px;
+  margin: 100px auto;
   color: var(--grey);
 }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -185,6 +185,15 @@ button:hover {
 }
 
 /*  --------- success message ----------------*/
-#success-message {
-  display: none;
+div#success-message {
+  background-color: white;
+  padding: 22px;
+  max-width: 503px;
+  margin: calc(50vh - 250px) auto;
+  border-radius: 35px;
+  box-shadow: -4px 4px 20px 4px rgba(0, 0, 0, 0.3);;
+}
+
+#success-message main {
+  width: 100%;
 }
