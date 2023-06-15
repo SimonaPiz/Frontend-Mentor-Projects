@@ -226,3 +226,7 @@ button a {
   text-decoration: none;
   color: white;
 }
+
+span#signed-email {
+  font-weight: bold;
+}
