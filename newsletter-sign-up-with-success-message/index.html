@@ -14,14 +14,14 @@
     <main>
       <h1>Stay updated!</h1>
       <p>Join 60,000+ product managers receiving monthly updates on:</p>
-      <ul>
+      <ul role="presentation">
         <li>Product discovery and building what matters</li>
         <li>Measuring to ensure updates are a success</li>
         <li>And much more!</li>
       </ul>
       <form action="success-message.html" method="get">  
         <label for="email">Email address</label>
-        <input type="email" id="email" name="email" placeholder="email@company.com" required/>
+        <input type="email" id="email" name="email" placeholder="email@company.com" autocomplete="email" required/>
         <button type="submit">Subscribe to monthly newsletter</button>
       </form>
     </main>
@@ -31,7 +31,7 @@
   </div>
   <!-- Sign-up form end -->
   
-  <div class="attribution">
+  <div class="attribution" role="contentinfo">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/SimonaPiz">Simona Pizio</a>.
   </div>
