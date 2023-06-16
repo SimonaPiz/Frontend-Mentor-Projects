@@ -203,6 +203,10 @@ button:hover {
     flex-grow: 2;
   }
 
+  #success-message h1 {
+    font-size: 2.5em !important;
+  }
+
   #success-message button {
     width: calc(100% - 48px) !important; 
     margin: 24px !important;
