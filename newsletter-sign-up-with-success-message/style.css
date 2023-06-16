@@ -1,9 +1,18 @@
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
-  src: local('Roboto'), local('Roboto_Regular'), local('Roboto Regular'), local('Roboto_Bold'), local('Roboto Bold'),
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto_Regular'), local('Roboto Regular'),
     url('./assets/fonts/Roboto-Regular.ttf') format('truetype'),
-    url('./assets/fonts/Roboto.woff2') format('woff2'),
+    url('./assets/fonts/Roboto.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto_Bold'), local('Roboto Bold'),
     url('./assets/fonts/Roboto-Bold.ttf') format('truetype'),
     url('./assets/fonts/Roboto-bold.woff2') format('woff2');    
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
@@ -30,9 +39,11 @@ body {
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 55px;
-  line-height: normal;
+  font-family: 'Roboto Bold', sans-serif;
+  font-size: 3em;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.4em;
+  line-height: 1.1em;
 }
 
 .container {
@@ -178,11 +189,6 @@ button:hover {
   img#img-mobile {
     display: block;
     width: 100%;
-    height: fit-content;
-  }
-
-  main h1 {
-    font-size: 35px;
   }
 
   button {
@@ -196,6 +202,7 @@ button:hover {
   #success-message main {
     flex-grow: 2;
   }
+
   #success-message button {
     width: calc(100% - 48px) !important; 
     margin: 24px !important;
@@ -213,8 +220,13 @@ div#success-message {
   width: 100%;
 }
 
+#success-message h1 {
+  font-size: 3.5em;
+}
+
 #success-message img {
   width: 64px;
+  margin-bottom: 12px;
 }
 
 #success-message button {
@@ -229,4 +241,5 @@ button a {
 
 span#signed-email {
   font-weight: bold;
+  font-family: 'Roboto Bold', sans-serif;
 }
