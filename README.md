@@ -7,9 +7,23 @@ My challenges solutions from Frontend mentor site
   3. 🟠 Intermediate
   4. 🔴 Advanced
   5. ⚫ Guru
+---
+
+## 🟠 3 - E-commerce product page |  ➡ *(in-progress)* 
+> HTML CSS JS
+
+<img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/main/ecommerce-product-page/design/desktop-preview.jpg?raw=true" alt="preview producy page" width="200px" />
+
+  ➡ view challange: [E-commerce product page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6/hub)
+  
+  ➡ view my solution: [repository](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/84398ba35c720d6a237a470bc24b4a5408f6ab22/ecommerce-product-page)
 
 
-## 🟢 2 - Newsletter sign-up form with success message 
+  - 📝Your challenge is to build out this e-commerce product page and get it looking as close to the design as possible.
+
+  > To do this challenge, you need a good understanding of HTML, CSS and JavaScript.
+
+## 🟢 2 - Newsletter sign-up form with success message ✅
 > HTML CSS JS
 
 <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/d173ac41-9ee8-4596-9358-3812381def2a" alt="preview newsletter sign-ip" width="200px" />
@@ -23,7 +37,7 @@ My challenges solutions from Frontend mentor site
 
   > This will test your skills with basic form structure, validation, and submission. The success state will also be an excellent opportunity to work with DOM manipulation.
 
-## 🔵 1 - QR code component
+## 🔵 1 - QR code component ✅
 > HTML CSS
 
 <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/e1167a2e-fd83-4d5a-954e-00ada6af5b32" alt="preview QR code component" width="200px" />
