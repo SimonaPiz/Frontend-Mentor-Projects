@@ -7,9 +7,16 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: white;
+}
+
 body {
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 16px;
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 0 12px;
 
   --primary1: hsl(26, 100%, 55%);
   --primary2: hsl(25, 100%, 94%);
@@ -24,15 +31,73 @@ body {
 header {
   height: 112px;
   width: 100%;
-  max-width: 1128px;
+  border-bottom: 2px solid var(--light-grayish-blue);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+}
+
+div#logo {
+  margin-right: 12px;
+}
+
+#logo a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav ul li a {
+  height: 100%;
   display: flex;
   align-items: center;
 }
 
 nav ul li {
+  padding: 0 6px;
+  height: 100%;
+  list-style: none;
   display: inline-block;
 }
 
 a {
   text-decoration: none;
+  color: var(--dark-grayish-blue);
+}
+
+h1, h2, h3 {
+  color: var(--dark-blue);
+}
+
+div#right-icons {
+  height: 100%;
+  float: right;
+  padding: 31 0;
+  display: flex;
+  align-items: center;
+}
+
+#cart a img {
+  height: 31px;
+}
+
+a#cart, a#user {
+  margin-left: 24px;
+}
+
+#user img {
+  height: 50px;
 }
