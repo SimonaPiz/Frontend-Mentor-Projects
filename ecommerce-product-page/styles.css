@@ -1,3 +1,29 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 16px;
+}
+
+header {
+  height: 112px;
+  width: 100%;
+  max-width: 1128px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
