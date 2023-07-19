@@ -44,7 +44,7 @@ nav {
 }
 
 div#logo {
-  margin-right: 12px;
+  margin-right: 4vw;
 }
 
 #logo a {
@@ -67,7 +67,7 @@ nav ul li a {
 }
 
 nav ul li {
-  padding: 0 6px;
+  padding: 0 1vw;
   height: 100%;
   list-style: none;
   display: inline-block;
@@ -113,12 +113,23 @@ section {
 }
 
 #preview, #details {
-  padding: 46px;
-
+  padding: 4%;
 }
 
-#preview img {
+img#large {
   width: 100%;
   max-width: 444px;
   border-radius: 15px;
+}
+
+#img-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 6% 0;
+}
+
+#img-list img {
+  width: 20%;
+  border-radius: 10px;
 }
