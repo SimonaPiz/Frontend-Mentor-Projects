@@ -27,7 +27,7 @@ body {
   --dark-grayish-blue: hsl(219, 9%, 45%);
   --grayish-blue: hsl(220, 14%, 75%);
   --light-grayish-blue: hsl(223, 64%, 98%);
-  --tranparent-black: hsla(0, 0%, 0%, 75%);
+  --tranparent-black: 75%;
 }
 
 header {
@@ -116,6 +116,7 @@ main {
 section {
   width: 50%;
   margin: 4%;
+  z-index: -1;
 }
 
 img#large {
@@ -250,4 +251,81 @@ footer {
 
 footer p {
   padding: 0 6px;
+}
+
+/* dark background for lightbox and mobile menu*/
+
+.dark-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: var(--tranparent-black);
+}
+
+/* mobile responsive*/
+
+#burger-menu, button.close, div.dark-background {
+  display: none;
+}
+
+@media only screen and (max-width: 670px) {
+  body {
+    padding: 0;
+  }
+
+  header {
+    padding: 24px;
+    height: 68px;
+    z-index: 1;
+  }
+
+  button#burger-menu {
+    display: inline-block;
+    margin-right: 16px;
+  }
+
+  div#logo {
+    display: inline-block;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    z-index: 10;
+    display: inline-block;
+
+    background-color: #ffffff;
+    font-weight: bold;
+
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+  }
+
+  nav ul li {
+    display: list-item;
+    padding: 12px 24px;
+    height: auto;
+  }
+
+  nav ul a {
+    color: var(--dark-blue);
+  }
+
+  button.close {
+    display: block;
+    padding: 24px;
+  }
+
+  a#user img {
+    height: 24px;
+  }
 }
