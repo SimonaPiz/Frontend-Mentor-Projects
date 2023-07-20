@@ -69,10 +69,22 @@
         <p class="price">$125.00 <span class="sale">50%</span></p>
         <p class="total-price">$250.00</p>
       </div>
-      <div id="quantity">
-        0
-        Add to cart
-      </div>
+      <form id="quantity" action="">
+        <div>
+          <button>
+            <img src="./images/icon-minus.svg" alt="remove product">
+          </button>
+          <input type="text" name="product quantity" id="num-quantity" value="0" readonly>
+          <button>
+            <img src="./images/icon-plus.svg" alt="add product">
+          </button>
+        </div>
+        <button type="submit">
+          <img src="./images/icon-cart-white.svg" alt="icon cart">
+          <p>Add to cart</p>
+        </button>
+      </form>
+             
     </section>
 
   </main>

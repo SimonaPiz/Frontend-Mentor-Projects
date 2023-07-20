@@ -141,10 +141,6 @@ section#details {
   padding: 40px 6px;
 }
 
-section#details :nth-child(n) {
-  margin-top: 20px;
-}
-
 h3 {
   color: var(--primary1);
 }
@@ -159,6 +155,7 @@ h2 {
   font-size: 32px;
   font-weight: 700;
   color: var(--dark-blue);
+  margin: 20px 0;
 }
 
 p.price {
@@ -166,6 +163,7 @@ p.price {
   font-size: 25px;
   line-height: 0;
   font-weight: bold;
+  margin-top: 40px;
 }
 
 span.sale {
@@ -183,4 +181,57 @@ p.total-price {
   font-weight: bold;
   color: var(--grayish-blue);
   text-decoration: line-through;
+  margin-top: 20px;
+}
+
+form#quantity {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+#quantity div {
+  background-color: var(--light-grayish-blue);
+  width: 35%;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 12px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+input#num-quantity {
+  cursor: default;
+  font-size: 1rem;
+  color: var(--dark-blue);
+  border: none;
+  background-color: transparent;
+  max-width: 30%;
+  text-align: center;
+  font-weight: bold;
+}
+
+button[type=submit] {
+  background-color: var(--primary1);
+  width: 60%;
+  height: 50px;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button[type=submit] img {
+  height: 15px;
+  width: 16px;
+  margin-right: 10px;
 }
