@@ -19,7 +19,7 @@
     <!--navbar menu-->
     <nav>
       <!--menu icon mobile-->
-      <button id="burger-menu">
+      <button id="burger-menu" onclick="openMenu();">
         <img src="./images/icon-menu.svg" alt="icon menu">
       </button>
 
@@ -28,9 +28,9 @@
         <a href="./index.html"><img src="./images/logo.svg" alt="logo sneakers"></a>
       </div>
 
-      <ul>
+      <ul id="menu">
         <!-- bitton close menu mobile-->
-        <button class="close">
+        <button class="close" onclick="closeMenu();">
           <img src="./images/icon-close.svg" alt="icon close">
         </button>
 
@@ -57,7 +57,7 @@
   </header>
 
   <!-- background menu and lightbox -->
-  <div class="dark-background">&nbsp;</div>
+  <div id="dark-background" onclick="closeMenu();">&nbsp;</div>
 
   <!-- main content -->
   <main>
@@ -108,4 +108,7 @@
     <p>Coded by <a href="https://www.frontendmentor.io/profile/SimonaPiz">@SimonaPiz</a>.</p>
   </footer>
 </body>
+
+<script  src="main.js"></script>
+
 </html>

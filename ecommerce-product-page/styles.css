@@ -255,7 +255,7 @@ footer p {
 
 /* dark background for lightbox and mobile menu*/
 
-.dark-background {
+#dark-background {
   position: fixed;
   top: 0;
   left: 0;
@@ -268,7 +268,7 @@ footer p {
 
 /* mobile responsive*/
 
-#burger-menu, button.close, div.dark-background {
+#burger-menu, button.close, div#dark-background {
   display: none;
 }
 
@@ -308,6 +308,7 @@ footer p {
     top: 0;
     width: 250px;
     height: 100vh;
+    transition: 0.5s;
   }
 
   nav ul li {
