@@ -97,11 +97,11 @@ div#right-icons {
   align-items: center;
 }
 
-#cart a img {
-  height: 31px;
+button#cart :last-child {
+  display: none;
 }
 
-a#cart, a#user {
+button#cart, a#user {
   margin-left: 24px;
 }
 
