@@ -107,6 +107,12 @@ button#cart, a#user {
 
 #user img {
   height: 50px;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+
+a#user img:hover {
+  border: 2px solid var(--primary1);
 }
 
 /* main product details*/
