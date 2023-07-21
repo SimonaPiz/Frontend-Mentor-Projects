@@ -75,6 +75,11 @@ nav ul li {
   display: inline-block;
 }
 
+nav ul li a:hover {
+  color: var(--dark-blue);
+  border-bottom: 3px solid var(--primary1);
+}
+
 a {
   text-decoration: none;
   color: var(--dark-grayish-blue);
@@ -240,6 +245,7 @@ button[type=submit] {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow:  0px 9px 30px hsla(26, 100%, 55%, 40%) ;
 }
 
 button[type=submit] img {
