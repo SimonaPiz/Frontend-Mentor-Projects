@@ -144,14 +144,35 @@ div#large img {
 
 #img-list {
   width: 100%;
+  max-width: 444px;
   display: flex;
   justify-content: space-between;
   padding: 6% 0;
 }
 
-#img-list img {
+.thumb, .active-thumb {
   width: 20%;
+  border-radius: 11px;
+  cursor: pointer;
+  display: flex;
+}
+
+.thumb img, .active-thumb img {
+  width: 100%;
   border-radius: 10px;
+}
+
+.thumb :hover {
+  opacity: 0.5;
+}
+
+div.active-thumb {
+  border: 3px solid var(--primary1);
+}
+
+div.active-thumb img {
+  filter: opacity(35%);
+  cursor: default;
 }
 
 section#details {
