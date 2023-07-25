@@ -130,13 +130,14 @@ section {
   z-index: 1;
 }
 
-div#large {
+/* ----------- section product previw images ---------------*/
+div.large {
   width: 100%;
   max-width: 444px;
   border-radius: 15px;
 }
 
-div#large img {
+div.large img {
   width: 100%;
   max-width: 444px;
   border-radius: 15px;
@@ -155,6 +156,7 @@ div#large img {
   border-radius: 11px;
   cursor: pointer;
   display: flex;
+  background-color: #ffffff;
 }
 
 .thumb img, .active-thumb img {
@@ -175,6 +177,51 @@ div.active-thumb img {
   cursor: default;
 }
 
+/* ----------- section product preview images in lightbox ---------------*/
+section#lightbox {
+  margin: 0;
+  position: absolute;
+  top: 9vh;
+  left: calc((100vw - 70vh)/2);
+  z-index: 10;
+  width: 70vh;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+button#btn-close-lightbox {
+  align-self: self-end;
+  padding: 20px 0 20px 20px;
+}
+
+#btn-close-lightbox img {
+  width: 22px;
+}
+
+button#btn-close-lightbox :last-child {
+  display: none;
+}
+
+div.large {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+div.large img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+section#lightbox .large img {
+  cursor: default;
+}
+
+/* ----------- section details ---------------*/
 section#details {
   display: flex;
   flex-direction: column;
@@ -311,6 +358,7 @@ footer p {
   height: 100vh;
   background-color: black;
   opacity: var(--tranparent-black);
+  transition: all 0.5s;
 }
 
 button.circle {
@@ -330,8 +378,12 @@ button.circle img {
 
 /* mobile responsive*/
 
-#burger-menu, button.close, div#dark-background, div#next-pre {
+#burger-menu, button#closeMenu, div#dark-background, div#next-pre {
   display: none;
+}
+
+button.close {
+  padding: 24px;
 }
 
 @media only screen and (max-width: 670px) {
@@ -384,9 +436,8 @@ button.circle img {
     color: var(--dark-blue);
   }
 
-  button.close {
+  button#closeMenu {
     display: block;
-    padding: 24px;
   }
 
   a#user img {
@@ -470,5 +521,9 @@ button.circle img {
   button[type=submit] {
     width: 100%;
     margin-top: 18px;
+  }
+
+  section#lightbox {
+    display: none;
   }
 }

@@ -19,7 +19,7 @@
     <!--navbar menu-->
     <nav>
       <!--menu icon mobile-->
-      <button id="burger-menu" onclick="openMenu();">
+      <button id="burger-menu">
         <img src="./images/icon-menu.svg" alt="icon menu">
       </button>
 
@@ -30,7 +30,7 @@
 
       <ul id="menu">
         <!-- bitton close menu mobile-->
-        <button class="close" onclick="closeMenu();">
+        <button class="close" id="closeMenu">
           <img src="./images/icon-close.svg" alt="icon close">
         </button>
 
@@ -58,14 +58,52 @@
   </header>
 
   <!-- background menu and lightbox -->
-  <div id="dark-background" onclick="closeMenu();">&nbsp;</div>
+  <div id="dark-background">&nbsp;</div>
 
   <!-- main content -->
   <main>
 
     <!-- product images -->
     <section id="preview">
-      <div id="large">
+      <div class="large" id="img-big">
+        <img src="./images/image-product-1.jpg" alt="product 1">
+      </div>  
+
+      <div id="img-list">
+        <div class="active-thumb">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="product 1">
+        </div>
+        <div class="thumb">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="product 2">
+        </div>
+        <div class="thumb">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="product 3">
+        </div>
+        <div class="thumb">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="product 4">
+        </div>
+      </div>
+
+      <div id="next-pre">
+        <button class="circle" id="butt-pre">
+          <img src="./images/icon-previous.svg" alt="icon preview">
+        </button>
+        <button class="circle" id="butt-next">
+          <img src="./images/icon-next.svg" alt="icon next">
+        </button>
+      </div>
+    </section>
+
+    <!-- product images open in lightbox -->
+    <section id="lightbox">
+
+      <!-- button close lightbox-->
+      <button class="close" id="btn-close-lightbox">
+        <img src="./images/icon-close-white.svg" alt="icon close">
+        <img src="./images/icon-close-orange.svg" alt="icon close">
+      </button>
+
+      <div class="large">
         <img src="./images/image-product-1.jpg" alt="product 1">
       </div>  
 
