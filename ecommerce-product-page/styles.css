@@ -376,9 +376,31 @@ button.circle img {
   height: 14px;
 }
 
+#next-pre-box button.circle {
+  width: 60px;
+  height: 60px;
+}
+
+#next-pre-box button.circle img {
+  width: 13px;
+  height: 20px;
+}
+
+div#next-pre-box {
+  justify-content: space-between;
+  position: absolute;
+  top: calc((100% - 66px - 150px) / 2 + 30px);
+  left: -30px;
+  width: calc(100% + 60px);
+}
+
+#butt-pre-box :last-child, #butt-next-box :last-child {
+  display: none;
+}
+
 /* mobile responsive*/
 
-#burger-menu, button#closeMenu, div#dark-background, div#next-pre {
+#burger-menu, button#closeMenu, div#dark-background, div#next-pre, div#next-pre-box {
   display: none;
 }
 

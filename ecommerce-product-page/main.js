@@ -36,15 +36,18 @@ cart.addEventListener('mouseleave', () => {
 let box = document.getElementById("lightbox");
 let bigImg = document.getElementById("img-big");
 let btnCloseLightbox = document.getElementById("btn-close-lightbox");
+let btnNextPre = document.getElementById("next-pre-box");
 
 const openLightbox = () => {
   darkBack.style.display = "block";
   box.style.display = 'flex';
+  btnNextPre.style.display = 'flex';
 }
 
 const closeLightbox = () => {
   darkBack.style.display = "none";
   box.style.display = 'none';
+  btnNextPre.style.display = 'none';
 }
 
 bigImg.addEventListener('click', openLightbox);
@@ -59,3 +62,27 @@ btnCloseLightbox.addEventListener("mouseleave", () => {
   btnCloseLightbox.children[0].style.display = 'inline-block';
   btnCloseLightbox.children[1].style.display = 'none';
 });
+
+// Add hover state for next-pre buttons
+let pre = document.getElementById("butt-pre-box");
+let next = document.getElementById("butt-next-box");
+
+pre.addEventListener('mouseenter', () => {
+  pre.children[0].style.display = 'none';
+  pre.children[1].style.display = 'inline-block';
+});
+
+pre.addEventListener('mouseleave', () => {
+  pre.children[1].style.display = 'none';
+  pre.children[0].style.display = 'inline-block';
+})
+
+next.addEventListener('mouseenter', () => {
+  next.children[0].style.display = 'none';
+  next.children[1].style.display = 'inline-block';
+});
+
+next.addEventListener('mouseleave', () => {
+  next.children[1].style.display = 'none';
+  next.children[0].style.display = 'inline-block';
+})
