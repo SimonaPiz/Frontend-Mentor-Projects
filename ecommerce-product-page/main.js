@@ -45,6 +45,9 @@ let btnNextPre = document.getElementById("next-pre-box");
 let mainImg = document.getElementById('main-img');
 let mainImgBox = document.getElementById('main-img-lightbox');
 
+const imgList = document.getElementsByClassName('img-list')[0];
+const imgListBox = document.getElementsByClassName('img-list')[1];
+
 const openLightbox = () => {
   if (window.screen.width > 670) {
     darkBack.style.display = "block";
@@ -52,6 +55,13 @@ const openLightbox = () => {
 
     let src = mainImg.getAttribute('src');
     mainImgBox.setAttribute('src', src);
+
+    let num = src.charAt(23);
+    console.log(num, imgListBox.children[num-1]);
+    let thumb = imgListBox.children[num-1];
+    if (thumb.getAttribute('class') == 'thumb') {
+      thumb.setAttribute('class', 'active-thumb');
+    }
 
     btnNextPre.style.display = 'flex';
   }
@@ -61,6 +71,9 @@ const closeLightbox = () => {
   darkBack.style.display = "none";
   box.style.display = 'none';
   btnNextPre.style.display = 'none';
+  for (element of imgListBox.children) {
+    element.setAttribute('class', 'thumb');    
+  };
 }
 
 bigImg.addEventListener('click', openLightbox);
