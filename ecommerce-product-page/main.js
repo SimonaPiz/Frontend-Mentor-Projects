@@ -88,3 +88,6 @@ next.addEventListener('mouseleave', () => {
   next.children[1].style.display = 'none';
   next.children[0].style.display = 'inline-block';
 })
+
+// Add click event on next-pre buttons
+// I haven't images for this features...
