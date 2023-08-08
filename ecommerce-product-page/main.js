@@ -22,15 +22,19 @@ butCloseMenu.addEventListener("click", closeMenu);
 //Add hover state for cart button
 let cart = document.getElementById("cart");
 
-cart.addEventListener("mouseenter", () => {
-  cart.children[0].style.display = 'none';
-  cart.children[1].style.display = 'inline-block';
-});
+const hover = (el, display = 'inline-block') => {
+  el.children[0].style.display = 'none';
+  el.children[1].style.display = display;
+};
 
-cart.addEventListener('mouseleave', () => {
-  cart.children[1].style.display = 'none';
-  cart.children[0].style.display = 'inline-block';
-})
+const leave = (el, display = 'inline-block') => {
+  el.children[1].style.display = 'none';
+  el.children[0].style.display = display;
+};
+
+cart.addEventListener("mouseenter", () => hover(cart));
+
+cart.addEventListener('mouseleave', () => leave(cart));
 
 // Open lightbox when clicking on large img
 let box = document.getElementById("lightbox");
@@ -48,7 +52,7 @@ const openLightbox = () => {
 
     let src = mainImg.getAttribute('src');
     mainImgBox.setAttribute('src', src);
-    
+
     btnNextPre.style.display = 'flex';
   }
 }
@@ -63,38 +67,18 @@ bigImg.addEventListener('click', openLightbox);
 darkBack.addEventListener("click", closeLightbox);
 btnCloseLightbox.addEventListener("click", closeLightbox);
 
-btnCloseLightbox.addEventListener("mouseenter", () => {
-  btnCloseLightbox.children[0].style.display = 'none';
-  btnCloseLightbox.children[1].style.display = 'inline-block';
-});
-btnCloseLightbox.addEventListener("mouseleave", () => {
-  btnCloseLightbox.children[0].style.display = 'inline-block';
-  btnCloseLightbox.children[1].style.display = 'none';
-});
+btnCloseLightbox.addEventListener("mouseenter", () => hover(btnCloseLightbox));
+btnCloseLightbox.addEventListener("mouseleave", () => leave(btnCloseLightbox));
 
 // Add hover state for next-pre buttons
 let preBox = document.getElementById("butt-pre-box");
 let nextBox = document.getElementById("butt-next-box");
 
-preBox.addEventListener('mouseenter', () => {
-  preBox.children[0].style.display = 'none';
-  preBox.children[1].style.display = 'inline-block';
-});
+preBox.addEventListener('mouseenter', () => hover(preBox));
+preBox.addEventListener('mouseleave', () => leave(preBox));
 
-preBox.addEventListener('mouseleave', () => {
-  preBox.children[1].style.display = 'none';
-  preBox.children[0].style.display = 'inline-block';
-})
-
-nextBox.addEventListener('mouseenter', () => {
-  nextBox.children[0].style.display = 'none';
-  nextBox.children[1].style.display = 'inline-block';
-});
-
-nextBox.addEventListener('mouseleave', () => {
-  nextBox.children[1].style.display = 'none';
-  nextBox.children[0].style.display = 'inline-block';
-})
+nextBox.addEventListener('mouseenter', () => hover(nextBox));
+nextBox.addEventListener('mouseleave', () => leave(nextBox));
 
 // Add click event on next-pre buttons
 let pre = document.getElementById("butt-pre");
