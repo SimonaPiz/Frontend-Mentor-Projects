@@ -141,6 +141,7 @@ div.large img {
   width: 100%;
   max-width: 444px;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .img-list {
@@ -204,20 +205,12 @@ button#btn-close-lightbox :last-child {
   display: none;
 }
 
-div.large {
-  width: 100%;
+#lightbox div.large {
   max-width: 100%;
-  border-radius: 15px;
 }
 
-div.large img {
-  width: 100%;
+#lightbox div.large img {
   max-width: 100%;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-section#lightbox .large img {
   cursor: default;
 }
 

@@ -38,10 +38,17 @@ let bigImg = document.getElementById("img-big");
 let btnCloseLightbox = document.getElementById("btn-close-lightbox");
 let btnNextPre = document.getElementById("next-pre-box");
 
+let mainImg = document.getElementById('main-img');
+let mainImgBox = document.getElementById('main-img-lightbox');
+
 const openLightbox = () => {
   if (window.screen.width > 670) {
     darkBack.style.display = "block";
     box.style.display = 'flex';
+
+    let src = mainImg.getAttribute('src');
+    mainImgBox.setAttribute('src', src);
+    
     btnNextPre.style.display = 'flex';
   }
 }
@@ -66,28 +73,57 @@ btnCloseLightbox.addEventListener("mouseleave", () => {
 });
 
 // Add hover state for next-pre buttons
-let pre = document.getElementById("butt-pre-box");
-let next = document.getElementById("butt-next-box");
+let preBox = document.getElementById("butt-pre-box");
+let nextBox = document.getElementById("butt-next-box");
 
-pre.addEventListener('mouseenter', () => {
-  pre.children[0].style.display = 'none';
-  pre.children[1].style.display = 'inline-block';
+preBox.addEventListener('mouseenter', () => {
+  preBox.children[0].style.display = 'none';
+  preBox.children[1].style.display = 'inline-block';
 });
 
-pre.addEventListener('mouseleave', () => {
-  pre.children[1].style.display = 'none';
-  pre.children[0].style.display = 'inline-block';
+preBox.addEventListener('mouseleave', () => {
+  preBox.children[1].style.display = 'none';
+  preBox.children[0].style.display = 'inline-block';
 })
 
-next.addEventListener('mouseenter', () => {
-  next.children[0].style.display = 'none';
-  next.children[1].style.display = 'inline-block';
+nextBox.addEventListener('mouseenter', () => {
+  nextBox.children[0].style.display = 'none';
+  nextBox.children[1].style.display = 'inline-block';
 });
 
-next.addEventListener('mouseleave', () => {
-  next.children[1].style.display = 'none';
-  next.children[0].style.display = 'inline-block';
+nextBox.addEventListener('mouseleave', () => {
+  nextBox.children[1].style.display = 'none';
+  nextBox.children[0].style.display = 'inline-block';
 })
 
 // Add click event on next-pre buttons
-// I haven't images for this features...
+let pre = document.getElementById("butt-pre");
+let next = document.getElementById("butt-next");
+
+const nextImg = (img) => {
+  let src = img.getAttribute('src');
+  //console.log(src);
+  let num = Number(src.charAt(23));
+  //console.log(num);
+  src = src.replace(/\d/, num < 4 ? num +1 : 1);
+  //console.log(src);
+
+  img.setAttribute('src', src);
+};
+
+next.addEventListener('click', () => nextImg(mainImg));
+nextBox.addEventListener('click', () => nextImg(mainImgBox));
+
+const prevImg = (img) => {
+  let src = img.getAttribute('src');
+  //console.log(src);
+  let num = Number(src.charAt(23));
+  //console.log(num);
+  src = src.replace(/\d/, num > 1 ? num -1 : 4);
+  //console.log(src);
+
+  img.setAttribute('src', src);
+};
+
+pre.addEventListener('click', () => prevImg(mainImg));
+preBox.addEventListener('click', () => prevImg(mainImgBox));
