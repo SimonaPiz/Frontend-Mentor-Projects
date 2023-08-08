@@ -59,9 +59,7 @@ const openLightbox = () => {
     let num = src.charAt(23);
     console.log(num, imgListBox.children[num-1]);
     let thumb = imgListBox.children[num-1];
-    if (thumb.getAttribute('class') == 'thumb') {
-      thumb.setAttribute('class', 'active-thumb');
-    }
+    thumb.setAttribute('class', 'active-thumb');
 
     btnNextPre.style.display = 'flex';
   }
@@ -99,13 +97,13 @@ let next = document.getElementById("butt-next");
 
 const nextImg = (img) => {
   let src = img.getAttribute('src');
-  //console.log(src);
   let num = Number(src.charAt(23));
-  //console.log(num);
-  src = src.replace(/\d/, num < 4 ? num +1 : 1);
-  //console.log(src);
+  let next = num < 4 ? num +1 : 1;
+  src = src.replace(/\d/, next);
 
   img.setAttribute('src', src);
+  imgListBox.children[num-1].setAttribute('class', 'thumb');
+  imgListBox.children[next-1].setAttribute('class', 'active-thumb');
 };
 
 next.addEventListener('click', () => nextImg(mainImg));
@@ -113,13 +111,13 @@ nextBox.addEventListener('click', () => nextImg(mainImgBox));
 
 const prevImg = (img) => {
   let src = img.getAttribute('src');
-  //console.log(src);
   let num = Number(src.charAt(23));
-  //console.log(num);
-  src = src.replace(/\d/, num > 1 ? num -1 : 4);
-  //console.log(src);
+  let pre = num > 1 ? num -1 : 4;
+  src = src.replace(/\d/, pre);
 
   img.setAttribute('src', src);
+  imgListBox.children[num-1].setAttribute('class', 'thumb');
+  imgListBox.children[pre-1].setAttribute('class', 'active-thumb');
 };
 
 pre.addEventListener('click', () => prevImg(mainImg));
