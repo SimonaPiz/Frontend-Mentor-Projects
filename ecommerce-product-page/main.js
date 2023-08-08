@@ -66,6 +66,11 @@ for (let i=0; i<imgList.children.length; i++) {
   img.addEventListener('click', () => selectImg(img, false, i));
 };
 
+for (let i=0; i<imgListBox.children.length; i++) {
+  let img = imgListBox.children[i];
+  img.addEventListener('click', () => selectImg(img, true, i));
+};
+
 const openLightbox = () => {
   if (window.screen.width > 670) {
     darkBack.style.display = "block";
