@@ -39,9 +39,11 @@ let btnCloseLightbox = document.getElementById("btn-close-lightbox");
 let btnNextPre = document.getElementById("next-pre-box");
 
 const openLightbox = () => {
-  darkBack.style.display = "block";
-  box.style.display = 'flex';
-  btnNextPre.style.display = 'flex';
+  if (window.screen.width > 670) {
+    darkBack.style.display = "block";
+    box.style.display = 'flex';
+    btnNextPre.style.display = 'flex';
+  }
 }
 
 const closeLightbox = () => {
