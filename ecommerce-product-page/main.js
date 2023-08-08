@@ -48,6 +48,24 @@ let mainImgBox = document.getElementById('main-img-lightbox');
 const imgList = document.getElementsByClassName('img-list')[0];
 const imgListBox = document.getElementsByClassName('img-list')[1];
 
+// Switch the large product image by clicking on the small thumbnails
+const selectImg = (img, isMainBox, idx) => {
+  let main = isMainBox ? mainImgBox : mainImg;
+  let src = main.getAttribute('src');
+  let currentNum = src.charAt(23);
+  src = src.replace(/\d/, idx+1);
+  main.setAttribute('src', src);
+
+  let current = (isMainBox ? imgListBox : imgList).children[currentNum-1];
+  current.setAttribute('class', 'thumb');
+  img.setAttribute('class', 'active-thumb');  
+};
+
+for (let i=0; i<imgList.children.length; i++) {
+  let img = imgList.children[i];
+  img.addEventListener('click', () => selectImg(img, false, i));
+};
+
 const openLightbox = () => {
   if (window.screen.width > 670) {
     darkBack.style.display = "block";
@@ -57,7 +75,6 @@ const openLightbox = () => {
     mainImgBox.setAttribute('src', src);
 
     let num = src.charAt(23);
-    console.log(num, imgListBox.children[num-1]);
     let thumb = imgListBox.children[num-1];
     thumb.setAttribute('class', 'active-thumb');
 
