@@ -145,7 +145,7 @@ const prevImg = (img) => {
 pre.addEventListener('click', () => prevImg(mainImg));
 preBox.addEventListener('click', () => prevImg(mainImgBox));
 
-// Add Cart element
+// Add Cart element opens/closes by clicking on cart button
 const cartItems = [];
 let sectionCart = document.getElementById('section-cart');
 sectionCart.style.display = 'none';
@@ -159,3 +159,20 @@ const toggleCart = () => {
 }
 
 cart.addEventListener('click', toggleCart);
+
+// Product Quantity buttons increment quantity number before adding to cart
+let butAddQty = document.getElementById('add-product'); 
+let butRmQty = document.getElementById('rm-product'); 
+let inputQty = document.getElementById('num-quantity');
+
+const increment = () => {
+  inputQty.textContent = Number(inputQty.textContent) + 1;
+}
+
+const decrement = () => {
+  let value = Number(inputQty.textContent);
+  if (value > 0) inputQty.textContent = value - 1;
+}
+
+butAddQty.addEventListener('click', increment);
+butRmQty.addEventListener('click', decrement);

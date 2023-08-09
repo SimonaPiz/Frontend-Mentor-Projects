@@ -300,7 +300,7 @@ p.total-price {
   margin-top: 20px;
 }
 
-form#quantity {
+div#quantity {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
@@ -313,7 +313,7 @@ form#quantity {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   padding: 0 12px;
 }
 
@@ -321,24 +321,23 @@ button {
   cursor: pointer;
   border: none;
   background-color: transparent;
+  display: flex;
 }
 
 #quantity button:hover {
   opacity: 0.7;
 }
 
-input#num-quantity {
+p#num-quantity {
   cursor: default;
   font-size: 1rem;
   color: var(--dark-blue);
-  border: none;
-  background-color: transparent;
   max-width: 30%;
   text-align: center;
   font-weight: bold;
 }
 
-button[type=submit] {
+button#submit {
   background-color: var(--primary1);
   width: 60%;
   height: 50px;
@@ -351,7 +350,7 @@ button[type=submit] {
   box-shadow:  0px 9px 30px hsla(26, 100%, 55%, 40%) ;
 }
 
-button[type=submit] img {
+button#submit img {
   height: 15px;
   width: 16px;
   margin-right: 10px;
@@ -556,7 +555,7 @@ button.close {
     margin-top: 0;
   }
 
-  form#quantity {
+  div#quantity {
     flex-direction: column;
   }
 
@@ -566,7 +565,7 @@ button.close {
     padding: 0 24px;
   }
 
-  button[type=submit] {
+  button#submit {
     width: 100%;
     margin-top: 18px;
   }
