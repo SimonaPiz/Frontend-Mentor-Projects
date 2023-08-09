@@ -117,6 +117,7 @@ a#user img:hover {
 
 /* Section Cart */
 section#section-cart {
+  display: none;
   margin: 0;
   position: absolute;
   top: 105px;

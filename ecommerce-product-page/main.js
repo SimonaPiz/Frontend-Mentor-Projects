@@ -144,3 +144,18 @@ const prevImg = (img) => {
 
 pre.addEventListener('click', () => prevImg(mainImg));
 preBox.addEventListener('click', () => prevImg(mainImgBox));
+
+// Add Cart element
+const cartItems = [];
+let sectionCart = document.getElementById('section-cart');
+sectionCart.style.display = 'none';
+
+const toggleCart = () => {
+  if (sectionCart.style.display != 'none') {
+    sectionCart.style.display = 'none';
+  } else {
+    sectionCart.style.display = 'block';
+  };
+}
+
+cart.addEventListener('click', toggleCart);
