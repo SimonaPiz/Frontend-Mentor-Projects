@@ -97,8 +97,22 @@ div#right-icons {
   align-items: center;
 }
 
-button#cart :last-child {
+button#cart :nth-child(2) {
   display: none;
+}
+
+p#num-products {
+  min-width: 20px;
+  padding: 0 4px;
+  height: 13px;
+  position: relative;
+  top: -6.5px;
+  right: 13px;
+  background-color: var(--primary1);
+  border-radius: 10px;
+  font-size: 0.7rem;
+  color: #ffffff;
+  display: none;  /*table-cell;*/
 }
 
 button#cart, a#user {

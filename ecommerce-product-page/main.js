@@ -146,7 +146,6 @@ pre.addEventListener('click', () => prevImg(mainImg));
 preBox.addEventListener('click', () => prevImg(mainImgBox));
 
 // Add Cart element opens/closes by clicking on cart button
-const cartItems = [];
 let sectionCart = document.getElementById('section-cart');
 sectionCart.style.display = 'none';
 
@@ -176,3 +175,17 @@ const decrement = () => {
 
 butAddQty.addEventListener('click', increment);
 butRmQty.addEventListener('click', decrement);
+
+// Add to cart button
+let butAddToCart = document.getElementById('submit');
+
+const addToCart = () => {
+  let value = Number(inputQty.textContent);
+  if (value > 0) {
+    let cur = Number(cartNum.textContent);
+    cartNum.textContent = cur + value;
+    cartNum.style.display = 'table-cell';
+  }
+}
+
+butAddToCart.addEventListener('click', addToCart);
