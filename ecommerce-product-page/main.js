@@ -148,6 +148,24 @@ preBox.addEventListener('click', () => prevImg(mainImgBox));
 // Add Cart element opens/closes by clicking on cart button
 let sectionCart = document.getElementById('section-cart');
 sectionCart.style.display = 'none';
+let cartNum = document.getElementById('num-products');
+
+const updateCart = (quantity) => {
+  if (quantity == 0) {
+    // show empty cart
+    sectionCart.children[1].children[0].style.display = 'block'; 
+    sectionCart.children[1].children[1].style.display = 'none'; 
+  } else {
+    // show filled cart
+    sectionCart.children[1].children[0].style.display = 'none'; 
+    sectionCart.children[1].children[1].style.display = 'flex'; 
+
+    // update price and quantity
+    let price = document.getElementById('product-price').textContent;
+    document.getElementsByClassName('total-price-cart')[0].textContent = Number(price) * quantity;
+    document.getElementsByClassName('quantity')[0].textContent = quantity;
+  }
+};
 
 const toggleCart = () => {
   if (sectionCart.style.display != 'none') {
@@ -183,8 +201,12 @@ const addToCart = () => {
   let value = Number(inputQty.textContent);
   if (value > 0) {
     let cur = Number(cartNum.textContent);
-    cartNum.textContent = cur + value;
+    cur += value;
+    cartNum.textContent = cur;
     cartNum.style.display = 'table-cell';
+
+    //update cart element
+    updateCart(cur);
   }
 }
 

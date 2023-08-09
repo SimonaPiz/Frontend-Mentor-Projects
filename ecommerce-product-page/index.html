@@ -65,6 +65,23 @@
     </div>
     <div id="cart-content">
       <p id="cart-empty">Your cart is empty.</p>
+      <div id="cart-filled">
+
+        <div class="cart-product">
+          <div class="thumb">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="product 1">
+          </div>
+          <div class="cart-product-desc">
+            <p>Fall Limited Edition Sneakers</p>
+            <p>$125.00 x <span class="quantity">1</span> <span class="price-cart">$<span class="total-price-cart">125</span>.00</span></p>
+          </div>
+          <button class="delete">
+            <img src="./images/icon-delete.svg" alt="icon delete product">
+          </button>
+        </div>
+
+        <button id="checkout">Checkout</button>
+      </div>
     </div>
   </section>
 
@@ -153,7 +170,7 @@
       <p id="description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
         durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
       <div id="price">
-        <p class="price">$125.00 <span class="sale">50%</span></p>
+        <p class="price">$<span id="product-price">125.00</span> <span class="sale">50%</span></p>
         <p class="total-price">$250.00</p>
       </div>
 
