@@ -3,42 +3,203 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="author" content="Simona Pizio" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | E-commerce product page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <header>
+    
+    <!--navbar menu-->
+    <nav>
+      <!--menu icon mobile-->
+      <button id="burger-menu">
+        <img src="./images/icon-menu.svg" alt="icon menu">
+      </button>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+      <!--logo agency-->
+      <div id="logo">
+        <a href="./index.html"><img src="./images/logo.svg" alt="logo sneakers"></a>
+      </div>
 
-  Sneaker Company
+      <ul id="menu">
+        <!-- bitton close menu mobile-->
+        <button class="close" id="closeMenu">
+          <img src="./images/icon-close.svg" alt="icon close">
+        </button>
 
-  Fall Limited Edition Sneakers
+        <!-- menu items -->
+        <li><a href="">Collections</a></li>
+        <li><a href="">Men</a></li>
+        <li><a href="">Women</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+    <div id="right-icons">
+      <!--icon cart-->
+      <button href="" id="cart" title="view cart">        
+        <img src="./images/icon-cart.svg" alt="icon cart">        
+        <img src="./images/icon-cart-dark.svg" alt="icon cart">
+        <p id="num-products">0</p>      
+      </button>
 
-  $125.00
-  50%
-  $250.00
+      <!--icon user-->
+      <a id="user" href="" title="user profile">
+        <img src="./images/image-avatar.png" alt="user icon">
+      </a>
+    </div>
+  </header>
 
-  0
-  Add to cart
+  <!-- Section Cart -->
+  <section id="section-cart">
+    <div id="cart-title">
+      <h4>Cart</h4>
+    </div>
+    <div id="cart-content">
+      <p id="cart-empty">Your cart is empty.</p>
+      <div id="cart-filled">
+
+        <div class="cart-product">
+          <div class="thumb">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="product 1">
+          </div>
+          <div class="cart-product-desc">
+            <p>Fall Limited Edition Sneakers</p>
+            <p>$125.00 x <span class="quantity">1</span> <span class="price-cart">$<span class="total-price-cart">125</span>.00</span></p>
+          </div>
+          <button class="delete">
+            <img src="./images/icon-delete.svg" alt="icon delete product">
+          </button>
+        </div>
+
+        <button id="checkout">Checkout</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- background menu and lightbox -->
+  <div id="dark-background">&nbsp;</div>
+
+  <!-- main content -->
+  <main>
+
+    <!-- product images -->
+    <section id="preview">
+      <div class="large" id="img-big">
+        <img id="main-img" src="./images/image-product-1.jpg" alt="product 1">
+      </div>  
+
+      <div class="img-list">
+        <div class="active-thumb">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="product 1">
+        </div>
+        <div class="thumb">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="product 2">
+        </div>
+        <div class="thumb">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="product 3">
+        </div>
+        <div class="thumb">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="product 4">
+        </div>
+      </div>
+
+      <div id="next-pre">
+        <button class="circle" id="butt-pre">
+          <img src="./images/icon-previous.svg" alt="icon preview">
+        </button>
+        <button class="circle" id="butt-next">
+          <img src="./images/icon-next.svg" alt="icon next">
+        </button>
+      </div>
+    </section>
+
+    <!-- product images open in lightbox -->
+    <section id="lightbox">
+
+      <!-- button close lightbox-->
+      <button class="close" id="btn-close-lightbox">
+        <img src="./images/icon-close-white.svg" alt="icon close">
+        <img src="./images/icon-close-orange.svg" alt="icon close">
+      </button>
+
+      <div class="large">
+        <img id="main-img-lightbox" src="./images/image-product-1.jpg" alt="product 1">
+      </div>  
+
+      <div class="img-list">
+        <div class="thumb">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="product 1">
+        </div>
+        <div class="thumb">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="product 2">
+        </div>
+        <div class="thumb">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="product 3">
+        </div>
+        <div class="thumb">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="product 4">
+        </div>
+      </div>
+
+      <div id="next-pre-box">
+        <button class="circle" id="butt-pre-box">
+          <img src="./images/icon-previous.svg" alt="icon preview">
+          <img src="./images/icon-previous-orange.svg" alt="icon preview">
+        </button>
+        <button class="circle" id="butt-next-box">
+          <img src="./images/icon-next.svg" alt="icon next">
+          <img src="./images/icon-next-orange.svg" alt="icon next">
+        </button>
+      </div>
+
+    </section>
+
+    <!-- product details -->
+    <section id="details">
+      <h3 class="brand">Sneaker Company</h3>
+      <h2>Fall Limited Edition Sneakers</h2>
+      <p id="description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div id="price">
+        <p class="price">$<span id="product-price">125.00</span> <span class="sale">50%</span></p>
+        <p class="total-price">$250.00</p>
+      </div>
+
+      <div id="quantity">
+        <div>
+          <button id="rm-product">
+            <img src="./images/icon-minus.svg" alt="remove product">
+          </button>
+          <p id="num-quantity">0</p>
+          <button id="add-product">
+            <img src="./images/icon-plus.svg" alt="add product">
+          </button>
+        </div>
+        <button id="submit">
+          <img src="./images/icon-cart-white.svg" alt="icon cart">
+          <p>Add to cart</p>
+        </button>
+      </div>
+             
+    </section>
+
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6" target="_blank">Frontend Mentor</a>.</p> 
+    <p>Coded by <a href="https://www.frontendmentor.io/profile/SimonaPiz">@SimonaPiz</a>.</p>
+  </footer>
 </body>
+
+<script  src="main.js"></script>
+
 </html>
