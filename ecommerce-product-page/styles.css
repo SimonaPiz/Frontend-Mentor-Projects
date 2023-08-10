@@ -112,11 +112,8 @@ p#num-products {
   border-radius: 10px;
   font-size: 0.7rem;
   color: #ffffff;
-  display: none;  /*table-cell;*/
-}
-
-button#cart, a#user {
-  margin-left: 24px;
+  display: table-cell;
+  visibility: hidden;
 }
 
 #user img {

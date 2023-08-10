@@ -194,7 +194,7 @@ const decrement = () => {
 butAddQty.addEventListener('click', increment);
 butRmQty.addEventListener('click', decrement);
 
-// Add to cart button
+// 'Add to cart' button
 let butAddToCart = document.getElementById('submit');
 
 const addToCart = () => {
@@ -203,7 +203,7 @@ const addToCart = () => {
     let cur = Number(cartNum.textContent);
     cur += value;
     cartNum.textContent = cur;
-    cartNum.style.display = 'table-cell';
+    cartNum.style.visibility = 'visible';
 
     //update cart element
     updateCart(cur);
@@ -211,3 +211,16 @@ const addToCart = () => {
 }
 
 butAddToCart.addEventListener('click', addToCart);
+
+// Add event to remove items from cart
+let butDelete = document.getElementsByClassName('delete')[0];
+
+const removeFromCart = () => {
+  cartNum.textContent = 0;
+  cartNum.style.visibility = 'hidden';
+
+  //update cart element
+  updateCart(0);
+}
+
+butDelete.addEventListener('click', removeFromCart);
