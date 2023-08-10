@@ -156,6 +156,7 @@ div#cart-title {
 div#cart-content {
   width: 100%;
   height: fit-content;
+  min-height: 187px;
   padding: 24px 0;
   display: flex;
   align-items: center;
