@@ -10,7 +10,6 @@
   "author": "Simona Pizio",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
+    "parcel": "^2.9.3"
   }
 }
