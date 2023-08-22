@@ -95,12 +95,14 @@ const openLightbox = () => {
 }
 
 const closeLightbox = () => {
-  darkBack.style.display = "none";
-  box.style.display = 'none';
-  btnNextPre.style.display = 'none';
   for (element of imgListBox.children) {
     element.setAttribute('class', 'thumb');    
   };
+  
+  darkBack.style.display = "none";
+  box.style.display = 'none';
+  btnNextPre.style.display = 'none';
+  
 }
 
 bigImg.addEventListener('click', openLightbox);
