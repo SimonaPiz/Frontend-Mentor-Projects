@@ -1,10 +1,12 @@
 {
   "name": "ecommerce-product-page",
+  "source": "index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "version": "1.0.0",
   "description": "![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html",
+    "start": "parcel",
     "build": "parcel build index.html --public-url ./"
   },
   "keywords": [],
