@@ -52,8 +52,8 @@ let btnNextPre = document.getElementById("next-pre-box");
 let mainImg = document.getElementById('main-img');
 let mainImgBox = document.getElementById('main-img-lightbox');
 
-const imgList = document.getElementsByClassName('img-list')[0];
-const imgListBox = document.getElementsByClassName('img-list')[1];
+const imgList = document.getElementById('img-list');
+const imgListBox = document.getElementById('img-list-box');
 
 // Switch the large product image by clicking on the small thumbnails
 const selectImg = (img, isMainBox, idx) => {
@@ -68,13 +68,19 @@ const selectImg = (img, isMainBox, idx) => {
   img.setAttribute('class', 'active-thumb');  
 };
 
-for (let i=0; i<imgList.children.length; i++) {
-  let img = imgList.children[i];
+let imgListItems = imgList.children;
+
+for (let i=0; i<imgListItems.length; i++) {
+  let img = imgListItems[i];
   img.addEventListener('click', () => selectImg(img, false, i));
 };
 
-for (let i=0; i<imgListBox.children.length; i++) {
-  let img = imgListBox.children[i];
+let imgBoxListItems = imgListBox.children;
+console.log(imgBoxListItems.length)
+
+for (let i=0; i < imgBoxListItems.length; i++) {
+  let img = imgBoxListItems[i];
+  console.log(img)
   img.addEventListener('click', () => selectImg(img, true, i));
 };
 
@@ -98,7 +104,7 @@ const closeLightbox = () => {
   for (element of imgListBox.children) {
     element.setAttribute('class', 'thumb');    
   };
-  
+
   darkBack.style.display = "none";
   box.style.display = 'none';
   btnNextPre.style.display = 'none';
