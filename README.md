@@ -8,8 +8,8 @@ My challenges solutions from Frontend mentor site
   4. 🔴 Advanced
   5. ⚫ Guru
 ---
-
-## 🟠 3 - E-commerce product page |  ➡ *(in-progress)* 
+## ⚪ 4  ... |  ➡ *(in-progress)* 
+## 🟠 3 - E-commerce product page ✅
 > HTML CSS JS
 
 <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/main/ecommerce-product-page/design/desktop-preview.jpg?raw=true" alt="preview producy page" width="200px" />
