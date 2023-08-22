@@ -1,3 +1,10 @@
+// import images
+import img1 from 'url:./images/image-product-1.jpg';
+import img2 from 'url:./images/image-product-2.jpg';
+import img3 from 'url:./images/image-product-3.jpg';
+import img4 from 'url:./images/image-product-4.jpg';
+let images = ['',img1,img2,img3,img4];
+
 //Add interactive menu for mobile
 let menu = document.getElementById('menu');
 let darkBack = document.getElementById("dark-background");
@@ -52,9 +59,9 @@ const imgListBox = document.getElementsByClassName('img-list')[1];
 const selectImg = (img, isMainBox, idx) => {
   let main = isMainBox ? mainImgBox : mainImg;
   let src = main.getAttribute('src');
-  let currentNum = src.charAt(23);
-  src = src.replace(/\d/, idx+1);
-  main.setAttribute('src', src);
+  let currentNum = Number(src.match(/(?<=image-product-)[1-4]/)[0]);
+  
+  main.setAttribute('src', images[idx+1]);
 
   let current = (isMainBox ? imgListBox : imgList).children[currentNum-1];
   current.setAttribute('class', 'thumb');
@@ -79,7 +86,7 @@ const openLightbox = () => {
     let src = mainImg.getAttribute('src');
     mainImgBox.setAttribute('src', src);
 
-    let num = src.charAt(23);
+    let num = Number(src.match(/(?<=image-product-)[1-4]/)[0]);
     let thumb = imgListBox.children[num-1];
     thumb.setAttribute('class', 'active-thumb');
 
@@ -119,11 +126,11 @@ let next = document.getElementById("butt-next");
 
 const nextImg = (img) => {
   let src = img.getAttribute('src');
-  let num = Number(src.charAt(23));
+  let num = Number(src.match(/(?<=image-product-)[1-4]/)[0]);
   let next = num < 4 ? num +1 : 1;
-  src = src.replace(/\d/, next);
-
-  img.setAttribute('src', src);
+  let newSrc = images[next];
+  
+  img.setAttribute('src', newSrc);
   imgListBox.children[num-1].setAttribute('class', 'thumb');
   imgListBox.children[next-1].setAttribute('class', 'active-thumb');
 };
@@ -133,9 +140,9 @@ nextBox.addEventListener('click', () => nextImg(mainImgBox));
 
 const prevImg = (img) => {
   let src = img.getAttribute('src');
-  let num = Number(src.charAt(23));
+  let num = Number(src.match(/(?<=image-product-)[1-4]/)[0]);
   let pre = num > 1 ? num -1 : 4;
-  src = src.replace(/\d/, pre);
+  src = images[pre];
 
   img.setAttribute('src', src);
   imgListBox.children[num-1].setAttribute('class', 'thumb');
