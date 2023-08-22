@@ -131,9 +131,11 @@ Users should be able to:
       - [x] Remove items from cart
 
 4. 🚀 Buil and Deploy
-5. ℹ Update README file
-6. ➡ Submit my solution
-7. 🌐 Share my solution
+
+   [![Netlify Status](https://api.netlify.com/api/v1/badges/df9f0214-adb0-46e5-b985-cd01309c9ec6/deploy-status)](https://app.netlify.com/sites/simonapiz-fmentor-ecom-product-page/deploys)
+6. ℹ Update README file
+7. ➡ Submit my solution
+8. 🌐 Share my solution
 
 ### Built with
 
