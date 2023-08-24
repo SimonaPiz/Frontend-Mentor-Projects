@@ -76,11 +76,11 @@ for (let i=0; i<imgListItems.length; i++) {
 };
 
 let imgBoxListItems = imgListBox.children;
-console.log(imgBoxListItems.length)
+//console.log(imgBoxListItems.length)
 
 for (let i=0; i < imgBoxListItems.length; i++) {
   let img = imgBoxListItems[i];
-  console.log(img)
+  //console.log(img)
   img.addEventListener('click', () => selectImg(img, true, i));
 };
 
