@@ -226,7 +226,7 @@ div.large img {
   cursor: pointer;
 }
 
-.img-list {
+#img-list, #img-list-box {
   width: 100%;
   max-width: 444px;
   display: flex;
@@ -568,7 +568,7 @@ button.close {
     cursor: default;
   }
 
-  .img-list {
+  #img-list, #img-list-box {
     display: none;
   }
 
