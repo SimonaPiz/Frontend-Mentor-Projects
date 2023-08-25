@@ -1,9 +1,11 @@
 // import images
-import img1 from 'url:./images/image-product-1.jpg';
-import img2 from 'url:./images/image-product-2.jpg';
-import img3 from 'url:./images/image-product-3.jpg';
-import img4 from 'url:./images/image-product-4.jpg';
-let images = ['',img1,img2,img3,img4];
+let images = [
+  '',
+  './images/image-product-1.jpg',
+  './images/image-product-2.jpg',
+  './images/image-product-3.jpg',
+  './images/image-product-4.jpg'
+];
 
 //Add interactive menu for mobile
 let menu = document.getElementById('menu');
