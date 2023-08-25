@@ -1,4 +1,4 @@
-// import images
+// import url images
 let images = [
   '',
   './images/image-product-1.jpg',
