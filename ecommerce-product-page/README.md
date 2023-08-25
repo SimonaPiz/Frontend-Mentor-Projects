@@ -4,11 +4,21 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 
 ![Desktop preview](https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/0489f9f4fce766aa5b838d40c905dbfe1ce915fb/ecommerce-product-page/design/desktop-preview.jpg)
 
+## Links
+
+- ➡ Solution URL: [Repo GitHub SimonaPiz/](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/ecommerce-product-page)
+- ☑ Live Site URL: [https://simonapiz-fmentor-ecom-product-page.netlify.app/](https://simonapiz-fmentor-ecom-product-page.netlify.app/)
+- 📱 Preview on mobile:
+  
+  ![QR Code](https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/a44c1a15-a45c-479f-b0c5-52d1fa614a28)
+
+  *Use your smartphone camera to open QR code link.*
+
 ## Table of contents
 
+- [Links](#links)
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Continued development](#continued-development)
@@ -47,10 +57,6 @@ Users should be able to:
 
     <img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/0489f9f4fce766aa5b838d40c905dbfe1ce915fb/ecommerce-product-page/design/active-states-basket-empty.jpg' alt='Desktop Empty Cart' height='300px' title='Desktop Empty Cart'>  <img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/0489f9f4fce766aa5b838d40c905dbfe1ce915fb/ecommerce-product-page/design/mobile-design-basket-empty.jpg' alt='Mobile Empty Cart' height='300px' title='Mobile Empty Cart'>
 
-### Links
-
-- Solution URL: [Repo GitHub](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/ecommerce-product-page)
-- Live Site URL: [https://simonapiz-fmentor-ecom-product-page.netlify.app/](https://simonapiz-fmentor-ecom-product-page.netlify.app/)
 
 ## My process
 
