@@ -16,7 +16,7 @@ My challenges solutions from Frontend mentor site
 
   ➡ view challange: [E-commerce product page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6/hub)
   
-  ➡ view my solution: [repository](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/84398ba35c720d6a237a470bc24b4a5408f6ab22/ecommerce-product-page)
+  ➡ view my solution: [repository](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/ecommerce-product-page)
 
 
   - 📝Your challenge is to build out this e-commerce product page and get it looking as close to the design as possible.
