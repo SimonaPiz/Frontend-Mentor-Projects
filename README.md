@@ -16,7 +16,7 @@ My challenges solutions from Frontend mentor site
 
   ➡ view challange: [E-commerce product page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6/hub)
   
-  ➡ view my solution: [repository](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/ecommerce-product-page)
+  ➡ view my solution: [repository](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/ecommerce-product-page) - [live demo](https://simonapiz-fmentor-ecom-product-page.netlify.app/)
 
 
   - 📝Your challenge is to build out this e-commerce product page and get it looking as close to the design as possible.
@@ -30,7 +30,7 @@ My challenges solutions from Frontend mentor site
 
   ➡ view challange: [Newsletter sign-up form with success message](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv)
   
-  ➡ view my solution: [repository](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/newsletter-sign-up-with-success-message)
+  ➡ view my solution: [repository](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/newsletter-sign-up-with-success-message) - [live demo](https://newsletter-sign-up_simonapiz.surge.sh/index.html)
 
 
   - 📝Your challenge is to build out this newsletter form and get it looking as close to the design as possible.
