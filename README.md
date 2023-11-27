@@ -8,13 +8,28 @@ My challenges solutions from Frontend mentor site
   4. 🔴 Advanced
   5. ⚫ Guru
 ---
-## ⚪ 4  ... |  ➡ *(in-progress)* 
+<!-- ## ⚪ 4  ... |  ➡ *(in-progress)* -->
+
+## 🔵 4 - 3-column preview card component |  ➡ *(in-progress)*
+> HTML CSS
+
+<img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/a01ed5b4-9f5b-4f57-bc3d-28dd4b19ddb6" alt="preview" width="200px" />
+
+  ➡ view challange: [3-column preview card component](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-)
+  
+  ➡ view my solution: [repository]() - [live demo]()
+
+
+  - 📝Your challenge is to build out this 3-column preview card component and get it looking as close to the design as possible.
+
+  > To do this challenge, you need a basic understanding of HTML and CSS and responsive design.
+
 ## 🟠 3 - E-commerce product page ✅
 > HTML CSS JS
 
 <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/main/ecommerce-product-page/design/desktop-preview.jpg?raw=true" alt="preview producy page" width="200px" />
 
-  ➡ view challange: [E-commerce product page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6/hub)
+  ➡ view challange: [E-commerce product page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6)
   
   ➡ view my solution: [repository](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/ecommerce-product-page) - [live demo](https://simonapiz-fmentor-ecom-product-page.netlify.app/)
 
