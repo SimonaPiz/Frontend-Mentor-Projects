@@ -1,4 +1,8 @@
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  color: lightgray;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
 .attribution a:hover { color: var(--primary1); }
 
@@ -26,6 +30,22 @@ body {
   --primary3: hsl(179, 100%, 13%);
   --tranparent-white: hsla(0, 0%, 100%, 0.75);
   --light-gray: hsl(0, 0%, 95%);
+}
+
+/* Footer */
+
+footer {
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid lightgray;
+}
+
+footer p {
+  padding: 0 6px;
 }
 
 h2 {
