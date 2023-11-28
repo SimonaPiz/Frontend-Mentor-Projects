@@ -1,0 +1,152 @@
+/* Footer */
+
+footer {
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid lightgray;
+}
+
+footer p {
+  padding: 0 6px;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  color: lightgray;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a:hover { color: var(--primary1); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+}
+
+/* Main */
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  max-width: 1440px;
+  margin: 0 auto;
+  color: var(--tranparent-white);
+
+  --primary1: hsl(31, 77%, 52%);
+  --primary2: hsl(184, 100%, 22%);
+  --primary3: hsl(179, 100%, 13%);
+  --tranparent-white: hsla(0, 0%, 100%, 0.75);
+  --light-gray: hsl(0, 0%, 95%);
+  --border-radius: 8px;
+}
+
+
+h2 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  color: var(--light-gray);
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
+main#container {
+  width: 920px;
+  max-width: 90%;
+  height: fit-content;
+  min-height: calc(105vw / 3);
+  margin: 15vh auto;
+  display: flex;
+}
+
+/* Cards */
+#card1 {
+  background-color: var(--primary1);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+
+#card2 {
+  background-color: var(--primary2);
+}
+
+#card3 {
+  background-color: var(--primary3);
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px;
+}
+
+img.icon {
+  height: 40px;
+  width: fit-content;
+  margin-bottom: 40px;
+}
+
+article p {
+  line-height: 1.5;
+}
+
+.card button {
+  width: 145px;
+  height: 48px;
+  border: none;
+  background-color: var(--light-gray);
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'Leend Deca', sans-serif;
+  font-size: 15px;
+  margin-top: 30px;
+}
+#card1 button {
+  color: var(--primary1);
+}
+#card2 button {
+  color: var(--primary2);
+}
+#card3 button {
+  color: var(--primary3);
+}
+
+#card1 button:hover, #card2 button:hover, #card3 button:hover{
+  background-color: transparent;
+  border: 2px solid var(--light-gray);
+  color: var(--light-gray);
+}
+
+/* Make it responsive for mobile */
+@media only screen and (max-width: 920px) {
+  main#container {
+    max-width: 90%;
+    height: fit-content;
+    min-height: auto;
+    margin: 90px auto;
+    flex-direction: column;
+  }
+
+  #card1 {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: var(--border-radius);
+  }
+  
+  #card3 {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--border-radius);
+  }
+}
