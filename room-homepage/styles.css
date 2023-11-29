@@ -29,7 +29,7 @@ footer p {
 }
 
 html {
-  background-color: burlywood;
+  background-color: white;
 }
 
 /* Main */
@@ -47,11 +47,34 @@ body {
   --dark-gray: hsl(0, 0%, 27%);
 }
 
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 62px;
+  display: flex;
+}
+
+header img {
+  margin-right: 62px;
+}
+
+nav ul {
+  display: flex;
+
+}
+
+nav li {
+  list-style: none;
+  margin-right: 40px;
+}
+
 nav a {
   text-decoration: none;
   color: var(--primary3);
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 600;
+  text-transform: lowercase;
 }
 
 h1 {
@@ -75,4 +98,16 @@ a#button-shop {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--primary2);
+}
+
+section {
+  width: 100%;
+  display: flex;
+}
+section#hero {
+  height: 66.6vh;
+}
+
+section#about {
+  height: 33.3vh;
 }
