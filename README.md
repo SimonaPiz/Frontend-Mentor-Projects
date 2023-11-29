@@ -10,14 +10,28 @@ My challenges solutions from Frontend mentor site
 ---
 <!-- ## ⚪ 4  ... |  ➡ *(in-progress)* -->
 
-## 🔵 4 - 3-column preview card component |  ➡ *(in-progress)*
+## 🟠 5 - Room Homepage |  ➡ *(in-progress)*
+> HTML CSS JS
+
+<img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/2eb521c6-21d8-43e3-82bf-2fd69792b5cc" alt="preview" width="200px" />
+
+  ➡ view challange: [Room Homepage](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq)
+  
+  ➡ view my solution: [repository]() - [live demo]()
+
+
+  - 📝Your challenge is to build out this e-commerce homepage and get it looking as close to the design as possible.
+
+  > To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.
+
+## 🔵 4 - 3-column preview card component ✅
 > HTML CSS
 
 <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/a01ed5b4-9f5b-4f57-bc3d-28dd4b19ddb6" alt="preview" width="200px" />
 
   ➡ view challange: [3-column preview card component](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-)
   
-  ➡ view my solution: [repository]() - [live demo]()
+  ➡ view my solution: [repository](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/3-column-preview-card) - [live demo](https://simonapiz-3-column-preview-card.netlify.app/)
 
 
   - 📝Your challenge is to build out this 3-column preview card component and get it looking as close to the design as possible.
