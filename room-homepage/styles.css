@@ -1,0 +1,33 @@
+/* Footer */
+
+footer {
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid lightgray;
+}
+
+footer p {
+  padding: 0 6px;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  color: lightgray;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a:hover { color: var(--primary1); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+}
