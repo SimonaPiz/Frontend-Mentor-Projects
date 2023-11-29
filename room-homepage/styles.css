@@ -29,14 +29,14 @@ footer p {
 }
 
 html {
-  background-color: white;
+  background-color: burlywood;
 }
 
 /* Main */
 body {
   font-family: 'League Spartan', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
   max-width: 1440px;
   margin: 0 auto;
   color: black;
@@ -45,4 +45,34 @@ body {
   --primary2: hsl(0, 0%, 0%);
   --primary3: hsl(0, 0%, 100%);
   --dark-gray: hsl(0, 0%, 27%);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary3);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  font-size: 16px;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--primary1);
+}
+
+a#button-shop {
+  font-size: 15px;
+  letter-spacing: 0.82em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--primary2);
 }
