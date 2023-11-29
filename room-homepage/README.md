@@ -1,9 +1,9 @@
-# Frontend Mentor - Room homepage solution
+# Room homepage
 > <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/main/3-column-preview-card/images/favicon-32x32.png" width="20px" alt="icon frontendmentor"> **Frontend Mentor solution**
 
 > This is a solution to the [Room homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-<img src="" width="400px" alt="preview" title="preview"> <img src="" width="400px" alt="preview" title="preview">
+<img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/b2567cf7-8f5b-4d8c-823a-ee293103d943" width="400px" alt="preview" title="preview"> <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/05c15328-a386-40c9-a1c1-f0e02dabe43c" width="400px" alt="preview" title="preview">
 
 ## Links
 
@@ -40,19 +40,19 @@ Desktop
 
     Design ➡ Solution
 
-<img src='' alt='Desktop Design' height='250px' title='Desktop Design'> <img src='' alt='Desktop Solution' height='250px' title='Desktop Solution'>
+<img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/main/room-homepage/design/desktop-design-slide-1.jpg' alt='Desktop Design' height='250px' title='Desktop Design'> <img src='' alt='Desktop Solution' height='250px' title='Desktop Solution'>
 
 Mobile
 
      Design ➡ Solution
 
-<img src='' alt='Mobile Design' width='100px' title='Mobile Design'> <img src='' alt='Mobile Solution' width='100px' title='Mobile Solution'>
+<img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/main/room-homepage/design/mobile-design.jpg' alt='Mobile Design' width='100px' title='Mobile Design'> <img src='' alt='Mobile Solution' width='100px' title='Mobile Solution'>
 
 
 ## My process
-1. 🗂 Initialize the project on [GitHub]() and use Git for log my commits and versioning my work.
+1. 🗂 Initialize the project on [GitHub](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/room-homepage) and use Git for log my commits and versioning my work.
 
-2. ✏ I looked at the designs, in [design directory](/design), to start planning how to approach the project:
+2. ✏ I looked at the designs, in [design directory](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/room-homepage/design), to start planning how to approach the project:
      - Desktop Design
      - Mobile Design
   
