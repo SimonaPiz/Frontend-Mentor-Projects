@@ -56,7 +56,7 @@ Mobile
      - Desktop Design
      - Mobile Design
   
-3. ⚙ Implemented project features with HTML CSS and JS  ✅ [issue #31](https://github.com/SimonaPiz/Frontend-Mentor-Projects/issues/31): 
+3. ⚙ Implemented project features with HTML CSS and JS  ✅ [issue #31](https://github.com/SimonaPiz/Frontend-Mentor-Projects/issues/31) : 
 
     - [ ] users should be able to Navigate the slider using either their mouse/trackpad or keyboard
     - [ ] users should be able to View the optimal layout for the site depending on their device's screen size
