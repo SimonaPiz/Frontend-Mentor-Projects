@@ -31,3 +31,18 @@ footer p {
 html {
   background-color: white;
 }
+
+/* Main */
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  max-width: 1440px;
+  margin: 0 auto;
+  color: black;
+
+  --primary1: hsl(0, 0%, 63%);
+  --primary2: hsl(0, 0%, 0%);
+  --primary3: hsl(0, 0%, 100%);
+  --dark-gray: hsl(0, 0%, 27%);
+}
