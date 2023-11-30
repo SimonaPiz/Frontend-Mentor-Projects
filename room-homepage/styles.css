@@ -37,7 +37,6 @@ body {
   font-family: 'League Spartan', sans-serif;
   font-size: 15px;
   font-weight: 600;
-  max-width: 1440px;
   margin: 0 auto;
   color: black;
 
@@ -77,19 +76,43 @@ nav a {
   text-transform: lowercase;
 }
 
+section {
+  width: 100%;
+}
+
+p {
+  color: var(--primary1);
+  line-height: 1.5;
+}
+
+/* Section Hero*/
+section#hero {
+  height: 66.6vh;
+}
+
+div#hero-img {
+  width: 59%;
+  height: 100%;
+  background: url('./images/desktop-image-hero-1.jpg') left no-repeat;
+  background-size: cover;
+}
+
+#hero article {
+  padding: 120px 6% 0 6%;
+  width: 41%;
+  height: 66.6vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 h1 {
   font-size: 48px;
   letter-spacing: -0.04em;
 }
 
-h2 {
-  font-size: 16px;
-  letter-spacing: 0.42em;
-  text-transform: uppercase;
-}
-
-p {
-  color: var(--primary1);
+#hero p , h1 {
+  margin-bottom: 16px;
 }
 
 a#button-shop {
@@ -100,14 +123,36 @@ a#button-shop {
   color: var(--primary2);
 }
 
-section {
-  width: 100%;
-  display: flex;
-}
-section#hero {
-  height: 66.6vh;
-}
-
+/* Section About*/
 section#about {
   height: 33.3vh;
+  display: flex;
+}
+
+#about article {
+  width: 40%;
+  height: 100%;
+  padding: 70px 2.9%;
+}
+
+h2 {
+  font-size: 16px;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+div.about-img {
+  width: 30%;
+  height: 100%;
+}
+
+#img-dark {
+  background: url('./images/image-about-dark.jpg') center no-repeat;
+  background-size: cover;
+}
+
+#img-light {
+  background: url('./images/image-about-light.jpg') center no-repeat;
+  background-size: cover;
 }
