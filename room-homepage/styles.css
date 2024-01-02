@@ -123,6 +123,18 @@ a#button-shop {
   color: var(--primary2);
 }
 
+a#button-shop span {
+  display: inline-block;
+  width: 40px;
+  height: 12px;
+  background-image: url('./images/icon-arrow.svg');
+}
+a#button-shop:hover {
+  color: var(--primary1);
+  span {background-image: url('./images/icon-arrow-hover.svg');}
+}
+
+
 #slide-buttons {
   width: calc(8.9vh * 2);
   height: 8.9vh;
@@ -137,6 +149,15 @@ a#button-shop {
   height: 100%;
   background-color: var(--primary2);
   cursor: pointer;
+}
+
+#slide-buttons button img {
+  height: 37.5%;
+}
+
+#slide-buttons button:hover {
+  background-color: var(--dark-gray);
+  transition: background-color 0.3s ease;
 }
 
 /* Section About*/
