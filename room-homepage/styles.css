@@ -114,12 +114,19 @@ div#hero-img {
 }
 
 #hero article {
-  padding: 13vh 6% 0 6%;
+  padding: 0 6% 9vh 6%;
   width: 41%;
   height: 66.6vh;
   position: absolute;
   top: 0;
   right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+article p {
+  line-height: 3vh;
 }
 
 h1 {
@@ -184,7 +191,7 @@ section#about {
 #about article {
   width: 40%;
   height: 100%;
-  padding: 0 2.9%;
+  padding: 3% 2.9%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -243,13 +250,17 @@ div.about-img {
     width: 100%;
     position: relative;
     height: auto;
-    padding: 6vh 6%;
-    display: flex;
-    flex-direction: column;
+    padding: 55px 6%;
+  }
+
+  h1 {
+    font-size: 42px;
   }
 
   #slide-buttons {
-    top: -8.9vh;
+    height: 56px;
+    width: 112px;
+    top: -56px;
     left: unset;
     bottom: unset;
     right: 0;
@@ -258,6 +269,7 @@ div.about-img {
   /*-------- burger menu --------------*/
   header {
     padding: 32px 6vw 32px 2vw;
+    overflow: hidden;
   }
   
   header img#logo {
