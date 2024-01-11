@@ -320,6 +320,6 @@ div.about-img {
     height: 100vh;
     background-color: black;
     opacity: 0.5;
-    transition: all 0.5s;
+    transition: 0.5s;
   }
 }

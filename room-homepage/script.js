@@ -14,11 +14,18 @@ const openMenu = () => {
   iconMenu.setAttribute('active', 'true');
 }
 
+const closeMenu = () => {
+  header.style.backgroundColor = 'unset';
+  darkBackground.style.display = 'none';
+  iconMenu.setAttribute('src', './images/icon-hamburger.svg');
+  logo.style.display = 'block';
+  nav.style.marginLeft = '100vw';
+  iconMenu.setAttribute('active', 'false');
+}
+
 iconMenu.addEventListener('click', () => {
   let isActive = iconMenu.getAttribute('active');
-  console.log(isActive)
   if (isActive == 'false' ) {
-    console.log('open Menu')
-    openMenu()
-  };
+    openMenu();
+  } else closeMenu();
 })
