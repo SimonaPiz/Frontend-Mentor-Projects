@@ -1,9 +1,20 @@
-// Add click event on burger menu icon for mobile device
 const iconMenu = document.getElementById('burger-icon');
 const logo = document.getElementById('logo');
 const nav = document.getElementsByTagName('nav')[0];
 const header = document.getElementsByTagName('header')[0];
 const darkBackground = document.getElementById('dark-background');
+const headerBackground = document.getElementById('header-background');
+
+headerBackground.animate({
+  backgroundColor: ['transparent', '#000000'],
+  opacity: [1, 0.5],
+}, {
+  timeline: new ScrollTimeline({
+    source: document.documentElement,
+  }),
+})
+
+// Add click event on burger menu icon for mobile device
 
 const openMenu = () => {
   header.style.backgroundColor = 'white';
@@ -25,7 +36,6 @@ const closeMenu = () => {
 
 iconMenu.addEventListener('click', () => {
   let isActive = iconMenu.getAttribute('active');
-  if (isActive == 'false' ) {
-    openMenu();
-  } else closeMenu();
+  if (isActive == 'false' ) openMenu();
+  else closeMenu();
 })
