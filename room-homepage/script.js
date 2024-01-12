@@ -40,6 +40,8 @@ iconMenu.addEventListener('click', () => {
   else closeMenu();
 })
 
+darkBackground.addEventListener('click', closeMenu)
+
 // ---------------------------------- slider code ------------------------------------
 const btnNext = document.getElementById('next');
 const btnPre = document.getElementById('pre');
