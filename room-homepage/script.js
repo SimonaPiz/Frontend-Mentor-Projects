@@ -39,3 +39,40 @@ iconMenu.addEventListener('click', () => {
   if (isActive == 'false' ) openMenu();
   else closeMenu();
 })
+
+// slider code
+const btnNext = document.getElementById('next');
+const btnPre = document.getElementById('pre');
+
+let slideIndex = 0;
+
+function showNextSlide(n) {
+  const slides = document.getElementsByClassName("hero-imgs");
+  
+  slides[n].animate({
+    left: ['0', '-59%'],
+    opacity: ['1', '0.5'],
+  }, {
+    duration: 1000,
+  })
+  slides[n].style.left = '-59%';
+  slideIndex++;
+
+  if (slideIndex >= slides.length) {slideIndex = 0}
+  if (n < 0) {slideIndex = slides.length - 1}
+  slides[slideIndex].style.left = '59%';
+
+  slides[slideIndex].animate({
+    left: ['59%', '0'],
+    opacity: ['0.5', '1'],
+  }, {
+    duration: 1000,
+  })  
+  slides[slideIndex].style.left = 0;
+}
+
+btnNext.addEventListener('click', () => {
+  console.log('cur',slideIndex)
+  showNextSlide(slideIndex);
+  console.log('next',slideIndex)
+})

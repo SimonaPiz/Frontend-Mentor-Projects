@@ -39,6 +39,7 @@ body {
   font-weight: 600;
   margin: 0 auto;
   color: black;
+  overflow: hidden;
 
   --primary1: hsl(0, 0%, 63%);
   --primary2: hsl(0, 0%, 0%);
@@ -53,6 +54,7 @@ header {
   padding: 62px;
   display: flex;
   align-items: center;
+  z-index: 10;
 }
 
 header img#logo {
@@ -93,7 +95,6 @@ nav a {
 
 section {
   width: 100%;
-  display: flex;
 }
 
 p {
@@ -104,13 +105,39 @@ p {
 /* Section Hero*/
 section#hero {
   height: 66.6vh;
+  overflow: hidden;
 }
 
 div#hero-img {
   width: 59%;
   height: 100%;
-  background: url('./images/desktop-image-hero-1.jpg') left no-repeat;
+  overflow: hidden;
+}
+
+div.hero-imgs {
+  width: 59%;
+  height: 66.6vh;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  
+  background-position: left;
+  background-repeat: no-repeat;
   background-size: cover;
+}
+
+#hero01 {
+  background-image: url('./images/desktop-image-hero-1.jpg');
+  left: 0;
+}
+
+#hero02 {
+  background-image: url('./images/desktop-image-hero-2.jpg');
+  left: 59%;
+}
+#hero03 {
+  background-image: url('./images/desktop-image-hero-3.jpg');
+  left: 59%;
 }
 
 #hero article {
@@ -120,9 +147,11 @@ div#hero-img {
   position: absolute;
   top: 0;
   right: 0;
+  background-color: var(--primary3);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 3;
 }
 
 article p {
@@ -186,6 +215,7 @@ a#button-shop:hover {
 /* Section About*/
 section#about {
   height: 33.3vh;
+  display: flex;
 }
 
 #about article {
@@ -275,7 +305,6 @@ div.about-img {
   header {
     padding: 32px 6vw 32px 2vw;
     overflow: hidden;
-    z-index: 10;
   }
 
   #header-background {
