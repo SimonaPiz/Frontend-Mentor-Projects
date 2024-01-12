@@ -339,7 +339,8 @@ div.about-img {
   /*-------- burger menu --------------*/
   header {
     padding: 32px 6vw 32px 2vw;
-    overflow: hidden;
+    overflow-x: hidden;
+    transition: 0.5s;
   }
 
   #header-background {
@@ -355,12 +356,14 @@ div.about-img {
     margin-right: 0;
     margin-bottom: 0;
     margin-left: calc(50vw - (2vw + 68px) - 31px);
+    transition: 0.5s;
   }
   
   header img#burger-icon {
     display: block;
     cursor: pointer;
     padding: 24px;
+    transition: 0.5s;
   }
 
   nav {
