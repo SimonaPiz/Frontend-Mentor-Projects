@@ -43,7 +43,7 @@ body {
   font-weight: 600;
   margin: 0 auto;
   color: black;
-  overflow: hidden;
+  overflow-x: hidden;
 
   --primary1: hsl(0, 0%, 63%);
   --primary2: hsl(0, 0%, 0%);

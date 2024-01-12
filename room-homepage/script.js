@@ -161,7 +161,7 @@ btnPre.addEventListener('click', () => {
   showPreSlide(slideIndex);
 })
 
-// ---------------------------------- keypress event ------------------------------------
+// ---------------------------------- keypress event for slider ------------------------------------
 window.addEventListener(
   "keydown",
   (event) => {
@@ -187,3 +187,11 @@ window.addEventListener(
   },
   true,
 );
+
+// ---------------------------------- scroll event on slider ------------------------------------
+const hero = document.getElementById('hero-img');
+hero.addEventListener('wheel', e => {
+  e.preventDefault();
+  if (e.deltaY > 10 || e.deltaX < -10) showPreSlide(slideIndex);
+  else if (e.deltaY < -10 || e.deltaX > 10) showNextSlide(slideIndex);
+})
