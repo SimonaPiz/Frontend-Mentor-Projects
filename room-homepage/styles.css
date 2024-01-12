@@ -138,10 +138,12 @@ div.hero-imgs {
 #hero02 {
   background-image: url('./images/desktop-image-hero-2.jpg');
   left: 59%;
+  display: none;
 }
 #hero03 {
   background-image: url('./images/desktop-image-hero-3.jpg');
   left: 59%;
+  display: none;
 }
 
 #hero-article {
@@ -302,6 +304,11 @@ div.about-img {
   #hero03 {
     background-image: url('./images/mobile-image-hero-3.jpg');
     left: 100%;
+  }
+
+  #animation-bg {
+    padding: 0;
+    height: 70%;
   }
 
   div.about-img {

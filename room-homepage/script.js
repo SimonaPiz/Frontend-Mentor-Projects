@@ -45,7 +45,6 @@ const btnNext = document.getElementById('next');
 const btnPre = document.getElementById('pre');
 
 let slideIndex = 0;
-console.log(window.screen.width)
 const imgWidth = window.screen.width < 910 ? 100 : 59;
 
 function showNextSlide(n) {
@@ -57,11 +56,13 @@ function showNextSlide(n) {
   slides[n].animate({
     left: ['0', `-${imgWidth}%`],
     opacity: ['1', '0.5'],
+    display: ['block', 'none'],
   }, {
     duration: 800,
     timingFunction: 'easy-out',
   })
   slides[n].style.left = `-${imgWidth}%`;
+  slides[n].style.display = 'none';
 
   // hidden current article
   articleBg.animate({
@@ -81,6 +82,7 @@ function showNextSlide(n) {
 
   // animate next image that is going in
   slides[slideIndex].style.left = `${imgWidth}%`;
+  slides[slideIndex].style.display = 'block';
 
   slides[slideIndex].animate({
     left: [`${imgWidth}%`, '0'],
@@ -111,11 +113,13 @@ function showPreSlide(n) {
   slides[n].animate({
     left: ['0', `${imgWidth}%`],
     opacity: ['1', '0.5'],
+    display: ['block', 'none'],
   }, {
     duration: 800,
     timingFunction: 'easy-out',
   })
   slides[n].style.left = `${imgWidth}%`;
+  slides[n].style.display = 'none';
 
   // hidden current article
   articleBg.animate({
@@ -135,6 +139,7 @@ function showPreSlide(n) {
   
   // animate next image that is going in
   slides[slideIndex].style.left = `-${imgWidth}%`;
+  slides[slideIndex].style.display = 'block';
   slides[slideIndex].animate({
     left: [`-${imgWidth}%`, '0'],
     opacity: ['0.5', '1'],
