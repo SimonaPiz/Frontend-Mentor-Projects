@@ -53,20 +53,47 @@ function showNextSlide(n) {
     left: ['0', '-59%'],
     opacity: ['1', '0.5'],
   }, {
-    duration: 1000,
+    duration: 800,
+    timingFunction: 'easy-in-out',
   })
   slides[n].style.left = '-59%';
   slideIndex++;
 
   if (slideIndex >= slides.length) {slideIndex = 0}
-  if (n < 0) {slideIndex = slides.length - 1}
   slides[slideIndex].style.left = '59%';
 
   slides[slideIndex].animate({
     left: ['59%', '0'],
     opacity: ['0.5', '1'],
   }, {
-    duration: 1000,
+    duration: 800,
+    timingFunction: 'easy-in-out',
+  })  
+  slides[slideIndex].style.left = 0;
+}
+
+function showPreSlide(n) {
+  const slides = document.getElementsByClassName("hero-imgs");
+  
+  slides[n].animate({
+    left: ['0', '59%'],
+    opacity: ['1', '0.5'],
+  }, {
+    duration: 800,
+    timingFunction: 'easy-in-out',
+  })
+  slides[n].style.left = '59%';
+  slideIndex--;
+
+  if (slideIndex < 0) {slideIndex = slides.length - 1}
+  slides[slideIndex].style.left = '-59%';
+
+  slides[slideIndex].animate({
+    left: ['-59%', '0'],
+    opacity: ['0.5', '1'],
+  }, {
+    duration: 800,
+    timingFunction: 'easy-in-out',
   })  
   slides[slideIndex].style.left = 0;
 }
@@ -74,5 +101,11 @@ function showNextSlide(n) {
 btnNext.addEventListener('click', () => {
   console.log('cur',slideIndex)
   showNextSlide(slideIndex);
+  console.log('next',slideIndex)
+})
+
+btnPre.addEventListener('click', () => {
+  console.log('cur',slideIndex)
+  showPreSlide(slideIndex);
   console.log('next',slideIndex)
 })
