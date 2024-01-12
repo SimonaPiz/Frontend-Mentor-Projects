@@ -10,8 +10,8 @@
 - ➡ Solution URL: [Repo GitHub SimonaPiz/]()
 - ☑ Live Site URL: [https://simonapiz-room-homepage.netlify.app/](https://simonapiz-room-homepage.netlify.app/)
 - 📱 Preview on mobile:
-  
-  ![QR Code]()
+
+  <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/b38d94de-202f-48aa-8a0a-957e35b5c085" width="200px" alt="QR Code">
 
   *Use your smartphone camera to open QR code link.*
 
