@@ -48,18 +48,36 @@ let slideIndex = 0;
 
 function showNextSlide(n) {
   const slides = document.getElementsByClassName("hero-imgs");
+  const articles = document.getElementById('article-conteiner').children;
+  const articleBg = articles[0];
   
+  // animate current image that is going out
   slides[n].animate({
     left: ['0', '-59%'],
     opacity: ['1', '0.5'],
   }, {
     duration: 800,
-    timingFunction: 'easy-in-out',
+    timingFunction: 'easy-out',
   })
   slides[n].style.left = '-59%';
+
+  // hidden current article
+  articleBg.animate({
+    backgroundColor: ['transparent', '#ffffff'],
+  }, {
+    duration: 800,
+    timingFunction: 'easy-out',
+  })
+  articleBg.style.backgroundColor = '#ffffff';
+  articles[n+1].style.display = 'none';
+
+  // set next index
   slideIndex++;
 
+  // if it's the end return to initial index
   if (slideIndex >= slides.length) {slideIndex = 0}
+
+  // animate next image that is going in
   slides[slideIndex].style.left = '59%';
 
   slides[slideIndex].animate({
@@ -67,9 +85,19 @@ function showNextSlide(n) {
     opacity: ['0.5', '1'],
   }, {
     duration: 800,
-    timingFunction: 'easy-in-out',
+    timingFunction: 'easy-in',
   })  
   slides[slideIndex].style.left = 0;
+
+  // display correct article
+  articles[slideIndex+1].style.display = 'block';
+  articleBg.animate({
+    backgroundColor: ['#ffffff', 'transparent'],
+  }, {
+    duration: 800,
+    timingFunction: 'easy-in',
+  })
+  articleBg.style.backgroundColor = 'transparent';
 }
 
 function showPreSlide(n) {
@@ -77,7 +105,7 @@ function showPreSlide(n) {
   const articles = document.getElementById('article-conteiner').children;
   const articleBg = articles[0];
   
-  // animate image is going out
+  // animate current image is going out
   slides[n].animate({
     left: ['0', '59%'],
     opacity: ['1', '0.5'],
@@ -97,13 +125,14 @@ function showPreSlide(n) {
   articleBg.style.backgroundColor = '#ffffff';
   articles[n+1].style.display = 'none';
 
+  // set next index
   slideIndex--;
 
   // if it's the end return to initial index
   if (slideIndex < 0) {slideIndex = slides.length - 1}
   
+  // animate next image that is going in
   slides[slideIndex].style.left = '-59%';
-  // animate image is going in
   slides[slideIndex].animate({
     left: ['-59%', '0'],
     opacity: ['0.5', '1'],
@@ -125,13 +154,9 @@ function showPreSlide(n) {
 }
 
 btnNext.addEventListener('click', () => {
-  console.log('cur',slideIndex)
   showNextSlide(slideIndex);
-  console.log('next',slideIndex)
 })
 
 btnPre.addEventListener('click', () => {
-  console.log('cur',slideIndex)
   showPreSlide(slideIndex);
-  console.log('next',slideIndex)
 })
