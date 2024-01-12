@@ -45,6 +45,8 @@ const btnNext = document.getElementById('next');
 const btnPre = document.getElementById('pre');
 
 let slideIndex = 0;
+console.log(window.screen.width)
+const imgWidth = window.screen.width < 910 ? 100 : 59;
 
 function showNextSlide(n) {
   const slides = document.getElementsByClassName("hero-imgs");
@@ -53,13 +55,13 @@ function showNextSlide(n) {
   
   // animate current image that is going out
   slides[n].animate({
-    left: ['0', '-59%'],
+    left: ['0', `-${imgWidth}%`],
     opacity: ['1', '0.5'],
   }, {
     duration: 800,
     timingFunction: 'easy-out',
   })
-  slides[n].style.left = '-59%';
+  slides[n].style.left = `-${imgWidth}%`;
 
   // hidden current article
   articleBg.animate({
@@ -78,10 +80,10 @@ function showNextSlide(n) {
   if (slideIndex >= slides.length) {slideIndex = 0}
 
   // animate next image that is going in
-  slides[slideIndex].style.left = '59%';
+  slides[slideIndex].style.left = `${imgWidth}%`;
 
   slides[slideIndex].animate({
-    left: ['59%', '0'],
+    left: [`${imgWidth}%`, '0'],
     opacity: ['0.5', '1'],
   }, {
     duration: 800,
@@ -107,13 +109,13 @@ function showPreSlide(n) {
   
   // animate current image is going out
   slides[n].animate({
-    left: ['0', '59%'],
+    left: ['0', `${imgWidth}%`],
     opacity: ['1', '0.5'],
   }, {
     duration: 800,
-    timingFunction: 'easy-in-out',
+    timingFunction: 'easy-out',
   })
-  slides[n].style.left = '59%';
+  slides[n].style.left = `${imgWidth}%`;
 
   // hidden current article
   articleBg.animate({
@@ -132,13 +134,13 @@ function showPreSlide(n) {
   if (slideIndex < 0) {slideIndex = slides.length - 1}
   
   // animate next image that is going in
-  slides[slideIndex].style.left = '-59%';
+  slides[slideIndex].style.left = `-${imgWidth}%`;
   slides[slideIndex].animate({
-    left: ['-59%', '0'],
+    left: [`-${imgWidth}%`, '0'],
     opacity: ['0.5', '1'],
   }, {
     duration: 800,
-    timingFunction: 'easy-in-out',
+    timingFunction: 'easy-in',
   })  
   slides[slideIndex].style.left = 0;
 
