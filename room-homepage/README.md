@@ -8,8 +8,12 @@
 ## Links
 
 - ➡ Solution URL: [Repo GitHub SimonaPiz/]()
-- ☑ Live Site URL: []()
+- ☑ Live Site URL: [https://simonapiz-room-homepage.netlify.app/](https://simonapiz-room-homepage.netlify.app/)
+- 📱 Preview on mobile:
+  
+  ![QR Code]()
 
+  *Use your smartphone camera to open QR code link.*
 
 ## Table of contents
 
@@ -34,6 +38,8 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Navigate the slider using either their mouse/trackpad or keyboard
+
+
 
 ### Screenshot
 Desktop
