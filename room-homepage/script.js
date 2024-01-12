@@ -40,7 +40,7 @@ iconMenu.addEventListener('click', () => {
   else closeMenu();
 })
 
-// slider code
+// ---------------------------------- slider code ------------------------------------
 const btnNext = document.getElementById('next');
 const btnPre = document.getElementById('pre');
 
@@ -160,3 +160,30 @@ btnNext.addEventListener('click', () => {
 btnPre.addEventListener('click', () => {
   showPreSlide(slideIndex);
 })
+
+// ---------------------------------- keypress event ------------------------------------
+window.addEventListener(
+  "keydown",
+  (event) => {
+    if (event.defaultPrevented) {
+      return; // Do nothing if the event was already processed
+    }
+
+    switch (event.key) {
+      case "ArrowLeft":
+        // Do something for "left arrow" key press.
+        showPreSlide(slideIndex);
+        break;
+      case "ArrowRight":
+        // Do something for "right arrow" key press.
+        showNextSlide(slideIndex);
+        break;
+      default:
+        return; // Quit when this doesn't handle the key event.
+    }
+
+    // Cancel the default action to avoid it being handled twice
+    event.preventDefault();
+  },
+  true,
+);
