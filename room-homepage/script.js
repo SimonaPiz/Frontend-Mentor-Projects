@@ -74,7 +74,10 @@ function showNextSlide(n) {
 
 function showPreSlide(n) {
   const slides = document.getElementsByClassName("hero-imgs");
+  const articles = document.getElementById('article-conteiner').children;
+  const articleBg = articles[0];
   
+  // animate image is going out
   slides[n].animate({
     left: ['0', '59%'],
     opacity: ['1', '0.5'],
@@ -83,11 +86,24 @@ function showPreSlide(n) {
     timingFunction: 'easy-in-out',
   })
   slides[n].style.left = '59%';
+
+  // hidden current article
+  articleBg.animate({
+    backgroundColor: ['transparent', '#ffffff'],
+  }, {
+    duration: 800,
+    timingFunction: 'easy-out',
+  })
+  articleBg.style.backgroundColor = '#ffffff';
+  articles[n+1].style.display = 'none';
+
   slideIndex--;
 
+  // if it's the end return to initial index
   if (slideIndex < 0) {slideIndex = slides.length - 1}
+  
   slides[slideIndex].style.left = '-59%';
-
+  // animate image is going in
   slides[slideIndex].animate({
     left: ['-59%', '0'],
     opacity: ['0.5', '1'],
@@ -96,6 +112,16 @@ function showPreSlide(n) {
     timingFunction: 'easy-in-out',
   })  
   slides[slideIndex].style.left = 0;
+
+  // display correct article
+  articles[slideIndex+1].style.display = 'block';
+  articleBg.animate({
+    backgroundColor: ['#ffffff', 'transparent'],
+  }, {
+    duration: 800,
+    timingFunction: 'easy-in',
+  })
+  articleBg.style.backgroundColor = 'transparent';
 }
 
 btnNext.addEventListener('click', () => {

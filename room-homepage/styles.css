@@ -32,6 +32,10 @@ html {
   background-color: white;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Main */
 body {
   font-family: 'League Spartan', sans-serif;
@@ -140,7 +144,7 @@ div.hero-imgs {
   left: 59%;
 }
 
-#hero article {
+#hero-article {
   padding: 0 6% 9vh 6%;
   width: 41%;
   height: 66.6vh;
@@ -152,6 +156,17 @@ div.hero-imgs {
   flex-direction: column;
   justify-content: center;
   z-index: 3;
+}
+
+#animation-bg {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 2% 12% 30% 12%;
+  background-color: transparent;
+  background-clip: content-box;
+  position: absolute;
 }
 
 article p {
@@ -250,10 +265,6 @@ div.about-img {
 }
 
 /*---------------------- responsive mobile layout ------------------------------------------*/
-
-#dark-background, #header-background {
-  display: none;
-}
 
 @media only screen and (max-width: 910px) {
   section#hero, section#about {
