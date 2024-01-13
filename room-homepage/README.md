@@ -46,13 +46,21 @@ Desktop
 
     Design ➡ Solution
 
-<img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/main/room-homepage/design/desktop-design-slide-1.jpg' alt='Desktop Design' height='250px' title='Desktop Design'> <img src='' alt='Desktop Solution' height='250px' title='Desktop Solution'>
+<img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/main/room-homepage/design/desktop-design-slide-1.jpg' alt='Desktop Design' height='250px' title='Desktop Design'> <img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/90b444ff-855f-4d2e-923d-656cde82e7a1' alt='Desktop Solution' height='250px' title='Desktop Solution'>
+
+> Slide 2
+
+<img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/main/room-homepage/design/desktop-design-slide-2.jpg' alt='Desktop Design slide 2' height='250px' title='Desktop Design slide 2'> <img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/dd79a578-ce53-428c-bbd4-f12fe73e1b7f' alt='Desktop Solution slide 2' height='250px' title='Desktop Solution slide 2'>
+
+> Slide 3
+
+<img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/main/room-homepage/design/desktop-design-slide-3.jpg' alt='Desktop Design slide 3' height='250px' title='Desktop Design slide 3'> <img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/6d87bf7d-040b-42a0-ac8a-5cb2dd6c3c5e' alt='Desktop Solution slide 3' height='250px' title='Desktop Solution slide 3'>
 
 Mobile
 
      Design ➡ Solution
 
-<img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/main/room-homepage/design/mobile-design.jpg' alt='Mobile Design' width='100px' title='Mobile Design'> <img src='' alt='Mobile Solution' width='100px' title='Mobile Solution'>
+<img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/main/room-homepage/design/mobile-design.jpg' alt='Mobile Design' width='100px' title='Mobile Design'> <img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/1ff25406-97ad-4fa3-8347-d02db8a26911' alt='Mobile Solution' width='100px' title='Mobile Solution'>
 
 
 ## My process
@@ -64,9 +72,12 @@ Mobile
   
 3. ⚙ Implemented project features with HTML CSS and JS  ✅ [issue #31](https://github.com/SimonaPiz/Frontend-Mentor-Projects/issues/31) : 
 
-    - [ ] users should be able to Navigate the slider using either their mouse/trackpad or keyboard
-    - [ ] users should be able to View the optimal layout for the site depending on their device's screen size
-    - [ ] users should be able to See hover states for all interactive elements on the page
+    - [x] users should be able to Navigate the slider using either their mouse/trackpad or keyboard
+    - [x] users should be able to View the optimal layout for the site depending on their device's screen size
+
+   <img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/fb775441-b727-44c9-9078-a82a19880ea0' alt='Menu Solution' width='250px' title='Menu Solution'> <img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/74bbb6e6-4509-4e88-99a8-6611e1b0a11d' alt='Menu contrast Solution' width='250px' title='Menu contrast Solution'>
+   
+    - [x] users should be able to See hover states for all interactive elements on the page
 
 4. 🚀 Buil and Deploy with Netlify
 5. ℹ Update README file
@@ -78,51 +89,21 @@ Mobile
 - CSS custom properties
 - Flexbox
 - CSS media queries
+- CSS transitions
+- JavaScript Dom manipulation
+- Javascript animation
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I improved my skills in animating and interacting components with JavaScript
+- scroll and keypress events on slider
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [MDN](https://developer.mozilla.org/en-US/docs/Learn) - This helped me for animate the slider.
+- [developer.chrome.com](https://developer.chrome.com/docs/css-ui/scroll-driven-animations?hl=it). - Scroll animations
 
 ## Author
 
 - GitHub - [Simona Pizio](https://github.com/SimonaPiz)
 - Frontend Mentor - [@SimonaPiz](https://www.frontendmentor.io/profile/SimonaPiz)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
