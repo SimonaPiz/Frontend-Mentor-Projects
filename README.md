@@ -8,23 +8,24 @@ My challenges solutions from Frontend mentor site
   4. 🔴 Advanced
   5. ⚫ Guru
 ---
-<!-- ## ⚪ 4  ... |  ➡ *(in-progress)* -->
+<!-- ## ⚪ 6  ... |  ➡ *(in-progress)* -->
 
-## 🟠 5 - Room Homepage |  ➡ *(in-progress)*
+## 🟠 5 - Room Homepage |  ✅
 > HTML CSS JS
 
 <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/2eb521c6-21d8-43e3-82bf-2fd69792b5cc" alt="preview" width="200px" />
 
   ➡ view challange: [Room Homepage](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq)
   
-  ➡ view my solution: [repository](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/room-homepage) - [live demo]()
+  ➡ view my solution: [repository](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/room-homepage) - [live demo](https://simonapiz-room-homepage.netlify.app/)
 
 
   - 📝Your challenge is to build out this e-commerce homepage and get it looking as close to the design as possible.
 
   > To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.
 
-## 🔵 4 - 3-column preview card component ✅
+---
+## 🔵 4 - 3-column preview card component | ✅
 > HTML CSS
 
 <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/a01ed5b4-9f5b-4f57-bc3d-28dd4b19ddb6" alt="preview" width="200px" />
@@ -38,7 +39,8 @@ My challenges solutions from Frontend mentor site
 
   > To do this challenge, you need a basic understanding of HTML and CSS and responsive design.
 
-## 🟠 3 - E-commerce product page ✅
+---
+## 🟠 3 - E-commerce product page | ✅
 > HTML CSS JS
 
 <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/main/ecommerce-product-page/design/desktop-preview.jpg?raw=true" alt="preview producy page" width="200px" />
@@ -52,7 +54,8 @@ My challenges solutions from Frontend mentor site
 
   > To do this challenge, you need a good understanding of HTML, CSS and JavaScript.
 
-## 🟢 2 - Newsletter sign-up form with success message ✅
+---
+## 🟢 2 - Newsletter sign-up form with success message | ✅
 > HTML CSS JS
 
 <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/d173ac41-9ee8-4596-9358-3812381def2a" alt="preview newsletter sign-ip" width="200px" />
@@ -66,7 +69,8 @@ My challenges solutions from Frontend mentor site
 
   > This will test your skills with basic form structure, validation, and submission. The success state will also be an excellent opportunity to work with DOM manipulation.
 
-## 🔵 1 - QR code component ✅
+---
+## 🔵 1 - QR code component | ✅
 > HTML CSS
 
 <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/e1167a2e-fd83-4d5a-954e-00ada6af5b32" alt="preview QR code component" width="200px" />
