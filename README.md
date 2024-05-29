@@ -1,4 +1,4 @@
-# Simona Pizio Frontend-Mentor Projects
+# Simona Pizio's Frontend-Mentor Projects
 My challenges solutions from [Frontend mentor](https://www.frontendmentor.io/) site
 
 #### Level legend:
@@ -31,7 +31,7 @@ My challenges solutions from [Frontend mentor](https://www.frontendmentor.io/) s
 
 <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/2eb521c6-21d8-43e3-82bf-2fd69792b5cc" alt="preview" width="200px" />
 
-  ➡ view challange: [Room Homepage](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq)
+  ➡ view challange: [frontendmentor.io/challenges/room-homepage](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq)
   
   ➡ view my solution: [repository](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/room-homepage) - [live demo](https://simonapiz-room-homepage.netlify.app/)
 
@@ -46,7 +46,7 @@ My challenges solutions from [Frontend mentor](https://www.frontendmentor.io/) s
 
 <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/a01ed5b4-9f5b-4f57-bc3d-28dd4b19ddb6" alt="preview" width="200px" />
 
-  ➡ view challange: [3-column preview card component](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-)
+  ➡ view challange: [frontendmentor.io/challenges/3column-preview-card-component](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-)
   
   ➡ view my solution: [repository](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/3-column-preview-card) - [live demo](https://simonapiz-3-column-preview-card.netlify.app/)
 
@@ -61,7 +61,7 @@ My challenges solutions from [Frontend mentor](https://www.frontendmentor.io/) s
 
 <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/main/ecommerce-product-page/design/desktop-preview.jpg?raw=true" alt="preview producy page" width="200px" />
 
-  ➡ view challange: [E-commerce product page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6)
+  ➡ view challange: [frontendmentor.io/challenges/ecommerce-product-page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6)
   
   ➡ view my solution: [repository](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/ecommerce-product-page) - [live demo](https://simonapiz-fmentor-ecom-product-page.netlify.app/)
 
@@ -76,7 +76,7 @@ My challenges solutions from [Frontend mentor](https://www.frontendmentor.io/) s
 
 <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/d173ac41-9ee8-4596-9358-3812381def2a" alt="preview newsletter sign-ip" width="200px" />
 
-  ➡ view challange: [Newsletter sign-up form with success message](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv)
+  ➡ view challange: [frontendmentor.io/challenges/newsletter-signup-form-with-success-message](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv)
   
   ➡ view my solution: [repository](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/newsletter-sign-up-with-success-message) - [live demo](https://newsletter-sign-up_simonapiz.surge.sh/index.html)
 
@@ -91,7 +91,7 @@ My challenges solutions from [Frontend mentor](https://www.frontendmentor.io/) s
 
 <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/e1167a2e-fd83-4d5a-954e-00ada6af5b32" alt="preview QR code component" width="200px" />
 
-  ➡ view challange: [QR code component](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
+  ➡ view challange: [frontendmentor.io/challenges/qr-code-component](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
   
   ➡ view my solution: [repository](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/qr-code-component-main)
 
