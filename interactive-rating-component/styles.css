@@ -43,3 +43,27 @@ body {
   --neutral-dark-blue: hsl(213, 19%, 18%);
   --neutral-very-dark-blue: hsl(216, 12%, 8%);
 }
+
+main {
+  width: 100vw;
+  height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#component {
+  width: 410px;
+  height: 420px;
+  background-color: var(--neutral-dark-blue);
+}
+
+
+/*---------------------- responsive mobile layout ------------------------------------------*/
+
+@media only screen and (max-width: 500px) {
+  div#component {
+    width: 87vw;
+    height: calc(420px - calc(410px - 87vw));
+  }
+}
