@@ -1,5 +1,5 @@
 # Simona Pizio Frontend-Mentor Projects
-My challenges solutions from Frontend mentor site
+My challenges solutions from [Frontend mentor](https://www.frontendmentor.io/) site
 
 #### Level legend:
   1. 🔵 Newbie
@@ -8,7 +8,23 @@ My challenges solutions from Frontend mentor site
   4. 🔴 Advanced
   5. ⚫ Guru
 ---
-<!-- ## ⚪ 6  ... |  ➡ *(in-progress)* -->
+<!-- ## ⚪ 0  ... |  ➡ *(in-progress)* -->
+
+## 🔵 6 - Interactive rating component |  ➡ *(in-progress)*
+> HTML CSS JS
+
+<img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/a24975ca-da15-4b4d-87bc-7e9e0adf052b" alt="preview interactive rating component" width="200px" />
+
+  ➡ view challange: [Room Homepage](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)
+  
+  ➡ view my solution: [repository]() - [live demo]()
+
+
+  - 📝Your challenge is to build out this interactive rating component and get it looking as close to the design as possible.
+
+  > To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.
+
+---
 
 ## 🟠 5 - Room Homepage |  ✅
 > HTML CSS JS
