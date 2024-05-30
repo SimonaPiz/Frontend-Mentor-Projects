@@ -1,3 +1,5 @@
+// -------  toggle checked option for rating status ---------------------------------
+
 const ratingList = document.getElementById('select-rating');
 
 const toggleCheck = (el) => {
@@ -46,8 +48,27 @@ function checkKeyHandler (event) {
     }
   }
 
-  //toggleCheck(event.target);
 }
 
 ratingList.addEventListener('click', checkClickHandler);
 ratingList.addEventListener('keydown', checkKeyHandler);
+
+//--------------- submit valid rating ---------------------------
+const submitBtn = document.getElementById('submit-btn');
+let rating = 0;
+
+const validateRating = () => {
+  let checked = document.querySelector("li[aria-selected='true']");
+  if (checked) rating = Number(checked.getAttribute('value'));
+  else alert('Please select a value before confirming');
+}
+
+submitBtn.addEventListener('click', () => {
+  validateRating();
+  if (rating) {
+    //change message status --> thank you
+    let sections = document.getElementsByTagName('section');
+    sections[0].style.display = 'none';
+    sections[1].style.display = 'flex';
+  }
+});
