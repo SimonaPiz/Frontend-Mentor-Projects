@@ -55,8 +55,79 @@ main {
 div#component {
   width: 410px;
   height: 420px;
-  background-color: var(--neutral-dark-blue);
+  background: radial-gradient(at 50% 0%, var(--neutral-dark-blue) 10%, hsl(215, 27%, 12%));
+  padding: 5%;
+  border-radius: 30px;
 }
+
+.msg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.8em;
+  line-height: 2;
+}
+
+article p {
+  color: var(--neutral-light-grey);
+  line-height: 1.5;
+  
+}
+
+#thank {
+  display: none;
+}
+
+form {
+  width: 100%;
+}
+
+ul {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+select:required {
+  border: none;
+}
+
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-dark-blue);
+  color: var(--neutral-light-grey);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 1.1em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+li:checked {
+  background-color: var(--neutral-white);
+  color: var(--neutral-dark-blue);
+}
+
+li:hover {
+  background-color: var(--primary-orange);
+  color: var(--neutral-dark-blue);
+}
+
 
 
 /*---------------------- responsive mobile layout ------------------------------------------*/

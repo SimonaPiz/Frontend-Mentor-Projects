@@ -9,35 +9,41 @@
   <title>Frontend Mentor | Interactive rating component</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-</head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></head>
 <body>
 
   <main>
     <div id="component">
-  <!-- Rating state start -->
+      <!-- Rating state start -->
+      <section class="msg" id="rating">
+        <article>
+          <h2>How did we do?</h2>
+          <p>Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!</p>
+        </article>
 
-  How did we do?
+        <ul id="select-rating" aria-label="select a rating" role="checkbox">
+           <li role="checkbox">1</li>
+           <li role="checkbox">2</li>
+           <li role="checkbox">3</li>
+           <li role="checkbox">4</li>
+           <li role="checkbox">5</li>
+        </ul>
+        <button>Submit</button>
+       
+      </section>
+      <!-- Rating state end -->
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+      <!-- Thank you state start -->
+      <section class="msg" id="thank">
+      You selected <!-- Add rating here --> out of 5
 
-  1 2 3 4 5
+      Thank you!
 
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+      </section>
   <!-- Thank you state end -->
     </div>
   </main>
