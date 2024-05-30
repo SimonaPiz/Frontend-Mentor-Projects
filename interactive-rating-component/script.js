@@ -6,11 +6,48 @@ const toggleCheck = (el) => {
   el.setAttribute('aria-selected', checked == 'true' ? 'false' : 'true');
 }
 
-function checkHandler (event) {
+function checkClickHandler (event) {
   let checked = document.querySelector("li[aria-selected='true']");
   toggleCheck(checked);
   toggleCheck(event.target);
 }
 
-ratingList.addEventListener('click', checkHandler);
-ratingList.addEventListener('keydown', checkHandler);
+function checkKeyHandler (event) {
+  let checked = document.querySelector("li[aria-selected='true']");
+  if (!checked) {
+    checked = event.target.firstElementChild;
+    toggleCheck(checked);
+  } else {
+    //console.log(event.key, checked.getAttribute('value'))
+    let value = checked.getAttribute('value');
+
+    switch (event.key) {
+      case 'ArrowDown':
+      case 'ArrowRight':
+        //move ->
+        toggleCheck(checked);
+        if (Number(value) < 5) {
+          toggleCheck(checked.nextElementSibling);
+        } else {
+          toggleCheck(event.target.firstElementChild);
+        }
+        break;
+      case 'ArrowUp':
+      case 'ArrowLeft':
+        //move <-
+        toggleCheck(checked);
+        if (Number(value) > 1) {
+          toggleCheck(checked.previousElementSibling);
+        } else {
+          toggleCheck(event.target.lastElementChild);
+        }
+        break;
+      default: return;
+    }
+  }
+
+  //toggleCheck(event.target);
+}
+
+ratingList.addEventListener('click', checkClickHandler);
+ratingList.addEventListener('keydown', checkKeyHandler);

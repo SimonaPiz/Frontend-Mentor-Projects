@@ -125,7 +125,7 @@ li[aria-selected="true"] {
   color: var(--neutral-dark-blue);
 }
 
-li:hover, li:focus {
+li:hover, li:focus, li:focus-visible, li:focus-within {
   background-color: var(--primary-orange);
   color: var(--neutral-dark-blue);
   transition: all 0.5s ease-in-out;
