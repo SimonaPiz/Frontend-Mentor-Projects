@@ -27,12 +27,18 @@
             to help us improve our offering!</p>
         </article>
 
-        <ul id="select-rating" aria-label="select a rating" role="checkbox">
-           <li role="checkbox">1</li>
-           <li role="checkbox">2</li>
-           <li role="checkbox">3</li>
-           <li role="checkbox">4</li>
-           <li role="checkbox">5</li>
+        <ul id="select-rating" 
+          aria-label="select a rating" 
+          role="listbox" 
+          aria-required="true" 
+          aria-orientation="horizontal"
+          tabindex="0"
+        >
+           <li role="option" aria-selected="false">1</li>
+           <li role="option" aria-selected="false">2</li>
+           <li role="option" aria-selected="false">3</li>
+           <li role="option" aria-selected="false">4</li>
+           <li role="option" aria-selected="false">5</li>
         </ul>
         <button id="submit-btn">Submit</button>
        
@@ -56,4 +62,5 @@
     <p>Coded by <a href="https://www.frontendmentor.io/profile/SimonaPiz">@SimonaPiz</a>.</p>
   </footer>
 </body>
+<script src="script.js" defer></script>
 </html>

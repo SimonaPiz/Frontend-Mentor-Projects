@@ -120,19 +120,20 @@ li {
   cursor: pointer;
 }
 
-li:checked {
+li[aria-selected="true"] {
   background-color: var(--neutral-white);
   color: var(--neutral-dark-blue);
 }
 
-li:hover {
+li:hover, li:focus {
   background-color: var(--primary-orange);
   color: var(--neutral-dark-blue);
+  transition: all 0.5s ease-in-out;
 }
 
 button#submit-btn {
   width: 100%;
-  height: 50px;
+  height: 45px;
   border-radius: 50px;
   border: none;
   text-transform: uppercase;
@@ -143,8 +144,9 @@ button#submit-btn {
   cursor: pointer;
 }
 
-button#submit-btn:hover {
+button#submit-btn:hover, button#submit-btn:focus {
   background-color: var(--neutral-white);
+  transition: all 0.5s ease-in;
 }
 
 
