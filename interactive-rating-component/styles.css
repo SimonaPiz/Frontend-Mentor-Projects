@@ -55,7 +55,7 @@ main {
 div#component {
   width: 410px;
   height: 420px;
-  background: radial-gradient(at 50% 0%, var(--neutral-dark-blue) 10%, hsl(215, 27%, 12%));
+  background: radial-gradient(at 50% 0%, var(--neutral-dark-blue) 10%, hsl(215, 27%, 12%) 90%);
   padding: 5%;
   border-radius: 30px;
 }
@@ -85,10 +85,6 @@ article p {
   display: none;
 }
 
-form {
-  width: 100%;
-}
-
 ul {
   width: 100%;
   height: 100px;
@@ -98,11 +94,6 @@ ul {
   justify-content: space-between;
   list-style: none;
 }
-
-select:required {
-  border: none;
-}
-
 
 li {
   display: flex;
@@ -126,6 +117,23 @@ li:checked {
 li:hover {
   background-color: var(--primary-orange);
   color: var(--neutral-dark-blue);
+}
+
+button#submit-btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--neutral-very-dark-blue);
+  background-color: var(--primary-orange);
+  cursor: pointer;
+}
+
+button#submit-btn:hover {
+  background-color: var(--neutral-white);
 }
 
 
