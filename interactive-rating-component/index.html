@@ -3,47 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="author" content="Simona Pizio" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></head>
 <body>
 
-  <!-- Rating state start -->
+  <main>
+    <div id="component">
+      <!-- Rating state start -->
+      <section class="msg" id="rating">
+        <div id="icon-star" aria-hidden="true">
+          <img src="./images/icon-star.svg">
+        </div>
 
-  How did we do?
+        <article>
+          <h2>How did we do?</h2>
+          <p>Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!</p>
+        </article>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+        <ul id="select-rating" 
+          aria-label="select a rating" 
+          role="listbox" 
+          aria-required="true" 
+          aria-orientation="horizontal"
+          tabindex="0"
+          aria-activedescendant="option1"
+        >
+           <li role="option" value="1" aria-selected="false" id="option1">1</li>
+           <li role="option" value="2" aria-selected="false">2</li>
+           <li role="option" value="3" aria-selected="false">3</li>
+           <li role="option" value="4" aria-selected="false">4</li>
+           <li role="option" value="5" aria-selected="false">5</li>
+        </ul>
+        <button id="submit-btn">Submit</button>
+       
+      </section>
+      <!-- Rating state end -->
 
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
+      <!-- Thank you state start -->
+      <section class="msg" id="thank">
+        <img src="./images/illustration-thank-you.svg" alt="feedback image example">
+        <p id="rating-result">
+          You selected
+          <!-- Add rating here --> 
+          <span id="rating-result-num"></span>
+          out of 5
+        </p>
+        <article>
+          <h2>Thank you!</h2>
+          <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!</p>
+        </article>      
+      </section>
   <!-- Thank you state end -->
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    </div>
+  </main>
+  <footer class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. </p>
+    <p>Coded by <a href="https://www.frontendmentor.io/profile/SimonaPiz">@SimonaPiz</a>.</p>
+  </footer>
 </body>
+<script src="script.js" defer></script>
 </html>
