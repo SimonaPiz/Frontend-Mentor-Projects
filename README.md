@@ -10,14 +10,14 @@ My challenges solutions from [Frontend mentor](https://www.frontendmentor.io/) s
 ---
 <!-- ## ⚪ 0  ... |  ➡ *(in-progress)* -->
 
-## 🔵 6 - Interactive rating component |  ➡ *(in-progress)*
+## 🔵 6 - Interactive rating component |  ✅
 > HTML CSS JS
 
 <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/a24975ca-da15-4b4d-87bc-7e9e0adf052b" alt="preview interactive rating component" width="200px" />
 
   ➡ view challange: [frontendmentor.io/challenges/interactive-rating-component](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)
   
-  ➡ view my solution: [repository]() - [live demo]()
+  ➡ view my solution: [repository](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/interactive-rating-component) - [live demo](https://fm-interactive-component-simonapiz.netlify.app/)
 
 
   - 📝Your challenge is to build out this interactive rating component and get it looking as close to the design as possible.
