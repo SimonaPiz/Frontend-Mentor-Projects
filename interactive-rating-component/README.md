@@ -1,24 +1,34 @@
-# Frontend Mentor - Interactive rating component solution
+# Interactive rating component
+> <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/main/3-column-preview-card/images/favicon-32x32.png" width="20px" alt="icon frontendmentor"> **Frontend Mentor solution**
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+> This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+<img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/3dd85ecf-38f1-4518-b1c4-84074ec55dee" width="400px" alt="preview" title="preview"> <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/a154e548-e8a0-45ed-9654-19b6a63bac9e" width="400px" alt="preview" title="preview">
+
+## Links
+
+- ➡ Solution URL: [Repo GitHub SimonaPiz/](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/interactive-rating-component)
+- ☑ Live Site URL: [fm-interactive-component-simonapiz.netlify.app](https://fm-interactive-component-simonapiz.netlify.app/)
+- 📱 Preview on mobile:
+
+  <img src="https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/b64cffc5-27b4-420d-b578-f01434a9388b" width="200px" alt="Site QR Code">
+
+
+  *Use your smartphone camera to open QR code link.*
 
 ## Table of contents
 
+- [Links](#links)
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+Build out this interactive rating component and get it looking as close to the design as possible.
 
 ### The challenge
 
@@ -31,83 +41,126 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Desktop
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+    Design ➡ Solution
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+<img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/3f261ddf8c8d17454c8ff92c75086c00404f97c5/interactive-rating-component/design/desktop-design.jpg' alt='Desktop Design' height='250px' title='Desktop Design'> <img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/24bd0308-8c19-4066-a976-3b4001d29e60' alt='Desktop Solution' height='250px' title='Desktop Solution'>
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+<img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/3f261ddf8c8d17454c8ff92c75086c00404f97c5/interactive-rating-component/design/desktop-thank-you-state.jpg' alt='Desktop Design Thank you' height='250px' title='Desktop Design Thank you'> <img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/72dee01e-0b5d-4a71-b34d-5c8d3b57849a' alt='Desktop Solution Thank you' height='250px' title='Desktop Solution Thank you'>
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+Mobile
 
-### Links
+     Design ➡ Solution
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+<img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/3f261ddf8c8d17454c8ff92c75086c00404f97c5/interactive-rating-component/design/mobile-design.jpg' alt='Mobile Design' width='200px' title='Mobile Design'> <img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/40a7d1fd-f609-4f12-9970-823642aa0c81' alt='Mobile Solution' width='200px' title='Mobile Solution'>
+
+<img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/blob/3f261ddf8c8d17454c8ff92c75086c00404f97c5/interactive-rating-component/design/mobile-thank-you-state.jpg' alt='Mobile Design Thank you' width='200px' title='Mobile Design Thank you'> <img src='https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/d2367d94-33d2-4bae-a714-ba6158d785bd' alt='Mobile Solution Thank you' width='200px' title='Mobile Solution Thank you'>
 
 ## My process
+1. 🗂 Initialize the project on [GitHub](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/interactive-rating-component) and use Git for log my commits and versioning my work.
+
+2. ✏ I looked at the designs, in [design directory](https://github.com/SimonaPiz/Frontend-Mentor-Projects/tree/main/interactive-rating-component/design), to start planning how to approach the project:
+     - Desktop Design
+     - Mobile Design
+  
+3. ⚙ Implemented project features with HTML CSS and JS  ✅ [issue #36](https://github.com/SimonaPiz/Frontend-Mentor-Projects/issues/36) :
+
+   Users should be able to:
+
+    - [x] View the optimal layout for the app depending on their device's screen size
+    - [x] See hover states for all interactive elements on the page
+    - [x] Select and submit a number rating
+    - [x] See the "Thank you" card state after submitting a rating
+4. Test Accessibility with Ligthhouse and manual test ✅ [issue #41](https://github.com/SimonaPiz/Frontend-Mentor-Projects/issues/41)
+
+    ![Lighthouse results](https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/1e2cdae0-eb21-4073-8d6a-7abbb12b1eb7)
+
+5. 🚀 Buil and Deploy with Netlify
+
+    ![image](https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/7632f661-8efb-4e6e-99d1-a5e024617634)
+
+    ![image](https://github.com/SimonaPiz/Frontend-Mentor-Projects/assets/91121660/ef07f031-5c5d-4561-bf27-578e7bd8d26b)
+   
+6. ℹ Update README file
+7. ➡ Submit my solution
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- CSS media queries
+- JavaScript Dom manipulation
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I improved my skills in web accessibility:
+- add aria role, label, selected, ...
 
-To see how you can add code snippets, see below:
-
+example:
 ```html
-<h1>Some HTML code I'm proud of</h1>
+...
+<ul id="select-rating" 
+  aria-label="select a rating" 
+  role="listbox" 
+  aria-required="true" 
+  aria-orientation="horizontal"
+  tabindex="0"
+  aria-activedescendant="option1"
+>
+  <li role="option" value="1" aria-selected="false" id="option1">1</li>
+  <li role="option" value="2" aria-selected="false">2</li>
+  <li role="option" value="3" aria-selected="false">3</li>
+  <li role="option" value="4" aria-selected="false">4</li>
+  <li role="option" value="5" aria-selected="false">5</li>
+</ul>
+...
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+
+- use keyborard to navigate and focus elements in the webpage
+
+example:
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+...
+function checkKeyHandler (event) {
+  let checked = document.querySelector("li[aria-selected='true']");
+  if (!checked) {
+    checked = event.target.firstElementChild;
+    toggleCheck(checked);
+  } else {
+    //console.log(event.key, checked.getAttribute('value'))
+    let value = checked.getAttribute('value');
+
+    switch (event.key) {
+      case 'ArrowDown':
+      case 'ArrowRight':
+        //move ->
+        toggleCheck(checked);
+        if (Number(value) < 5) {
+          toggleCheck(checked.nextElementSibling);
+        } else {
+          toggleCheck(event.target.firstElementChild);
+        }
+        break;
+      case 'ArrowUp':
+      case 'ArrowLeft':
+        //move <-
+        toggleCheck(checked);
+        if (Number(value) > 1) {
+          toggleCheck(checked.previousElementSibling);
+        } else {
+          toggleCheck(event.target.lastElementChild);
+        }
+        break;
+      default: return;
+    }
+  }
 }
+...
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- GitHub - [Simona Pizio](https://github.com/SimonaPiz)
+- Frontend Mentor - [@SimonaPiz](https://www.frontendmentor.io/profile/SimonaPiz)
