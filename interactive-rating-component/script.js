@@ -66,6 +66,9 @@ const validateRating = () => {
 submitBtn.addEventListener('click', () => {
   validateRating();
   if (rating) {
+    let ratingResult = document.getElementById('rating-result-num');
+    ratingResult.innerText = rating;
+    
     //change message status --> thank you
     let sections = document.getElementsByTagName('section');
     sections[0].style.display = 'none';
