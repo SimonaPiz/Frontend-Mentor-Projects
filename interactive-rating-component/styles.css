@@ -56,7 +56,7 @@ div#component {
   width: 410px;
   height: 420px;
   background: radial-gradient(at 50% 0%, var(--neutral-dark-blue) 10%, hsl(215, 27%, 12%) 90%);
-  padding: 5%;
+  padding: 30px;
   border-radius: 30px;
 }
 
