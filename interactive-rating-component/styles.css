@@ -19,7 +19,7 @@ footer p {
   text-align: center; 
   color: lightgray;
 }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: white; }
 .attribution a:hover { color: var(--primary-orange); }
 
 * {
@@ -170,6 +170,7 @@ button#submit-btn:hover, button#submit-btn:focus {
 @media only screen and (max-width: 500px) {
   div#component {
     width: 87vw;
-    height: calc(420px - calc(410px - 87vw));
+    height: calc(420px - calc(410px - 100vw));
+    border-radius: 20px;
   }
 }
