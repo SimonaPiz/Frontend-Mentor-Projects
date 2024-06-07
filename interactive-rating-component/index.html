@@ -18,7 +18,7 @@
     <div id="component">
       <!-- Rating state start -->
       <section class="msg" id="rating">
-        <div id="icon-star" aria-hidden="true">
+        <div id="icon-star" aria-hidden="true" alt="icon star">
           <img src="./images/icon-star.svg">
         </div>
 
@@ -30,17 +30,15 @@
 
         <ul id="select-rating" 
           aria-label="select a rating" 
-          role="listbox" 
+          role="radiogroup" 
           aria-required="true" 
-          aria-orientation="horizontal"
           tabindex="0"
-          aria-activedescendant="option1"
         >
-           <li role="option" value="1" aria-selected="false" id="option1">1</li>
-           <li role="option" value="2" aria-selected="false">2</li>
-           <li role="option" value="3" aria-selected="false">3</li>
-           <li role="option" value="4" aria-selected="false">4</li>
-           <li role="option" value="5" aria-selected="false">5</li>
+           <li role="radio" data-value="1" aria-checked="false">1</li>
+           <li role="radio" data-value="2" aria-checked="false">2</li>
+           <li role="radio" data-value="3" aria-checked="false">3</li>
+           <li role="radio" data-value="4" aria-checked="false">4</li>
+           <li role="radio" data-value="5" aria-checked="false">5</li>
         </ul>
         <button id="submit-btn">Submit</button>
        
@@ -49,7 +47,7 @@
 
       <!-- Thank you state start -->
       <section class="msg" id="thank">
-        <img src="./images/illustration-thank-you.svg" alt="feedback image example">
+        <img src="./images/illustration-thank-you.svg" alt="feedback image example" aria-hidden="true">
         <p id="rating-result">
           You selected
           <!-- Add rating here --> 

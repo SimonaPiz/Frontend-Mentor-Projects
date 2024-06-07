@@ -134,7 +134,7 @@ li {
   cursor: pointer;
 }
 
-li[aria-selected="true"] {
+li[aria-checked="true"] {
   background-color: var(--neutral-white);
   color: var(--neutral-dark-blue);
 }

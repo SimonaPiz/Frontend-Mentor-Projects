@@ -103,17 +103,15 @@ example:
 ...
 <ul id="select-rating" 
   aria-label="select a rating" 
-  role="listbox" 
+  role="radiogroup" 
   aria-required="true" 
-  aria-orientation="horizontal"
   tabindex="0"
-  aria-activedescendant="option1"
 >
-  <li role="option" value="1" aria-selected="false" id="option1">1</li>
-  <li role="option" value="2" aria-selected="false">2</li>
-  <li role="option" value="3" aria-selected="false">3</li>
-  <li role="option" value="4" aria-selected="false">4</li>
-  <li role="option" value="5" aria-selected="false">5</li>
+  <li role="radio" data-value="1" aria-checked="false">1</li>
+  <li role="radio" data-value="2" aria-checked="false">2</li>
+  <li role="radio" data-value="3" aria-checked="false">3</li>
+  <li role="radio" data-value="4" aria-checked="false">4</li>
+  <li role="radio" data-value="5" aria-checked="false">5</li>
 </ul>
 ...
 ```
@@ -124,13 +122,12 @@ example:
 ```js
 ...
 function checkKeyHandler (event) {
-  let checked = document.querySelector("li[aria-selected='true']");
+  let checked = document.querySelector("li[aria-checked='true']");
   if (!checked) {
     checked = event.target.firstElementChild;
     toggleCheck(checked);
   } else {
-    //console.log(event.key, checked.getAttribute('value'))
-    let value = checked.getAttribute('value');
+    let value = checked.getAttribute('data-value');
 
     switch (event.key) {
       case 'ArrowDown':

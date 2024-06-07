@@ -4,24 +4,24 @@ const ratingList = document.getElementById('select-rating');
 
 const toggleCheck = (el) => {
   if (!el) return;
-  let checked = el.getAttribute('aria-selected');
-  el.setAttribute('aria-selected', checked == 'true' ? 'false' : 'true');
+  let checked = el.getAttribute('aria-checked');
+  el.setAttribute('aria-checked', checked == 'true' ? 'false' : 'true');
 }
 
 function checkClickHandler (event) {
-  let checked = document.querySelector("li[aria-selected='true']");
+  let checked = document.querySelector("li[aria-checked='true']");
   toggleCheck(checked);
   toggleCheck(event.target);
 }
 
 function checkKeyHandler (event) {
-  let checked = document.querySelector("li[aria-selected='true']");
+  let checked = document.querySelector("li[aria-checked='true']");
   if (!checked) {
     checked = event.target.firstElementChild;
     toggleCheck(checked);
   } else {
     //console.log(event.key, checked.getAttribute('value'))
-    let value = checked.getAttribute('value');
+    let value = checked.getAttribute('data-value');
 
     switch (event.key) {
       case 'ArrowDown':
@@ -58,8 +58,8 @@ const submitBtn = document.getElementById('submit-btn');
 let rating = 0;
 
 const validateRating = () => {
-  let checked = document.querySelector("li[aria-selected='true']");
-  if (checked) rating = Number(checked.getAttribute('value'));
+  let checked = document.querySelector("li[aria-checked='true']");
+  if (checked) rating = Number(checked.getAttribute('data-value'));
   else alert('Please select a value before confirming');
 }
 
