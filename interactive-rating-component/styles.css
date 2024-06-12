@@ -86,7 +86,7 @@ h2 {
   line-height: 2;
 }
 
-article p {
+section p {
   color: var(--neutral-light-grey);
   line-height: 1.5;
   
@@ -97,9 +97,7 @@ article p {
   align-items: center;
   padding: 5% 1%;
 
-  article {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 p#rating-result {
