@@ -25,18 +25,38 @@
         <h2>How did we do?</h2>
         <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
-        <ul id="select-rating" 
+        <fieldset id="select-rating" 
           aria-label="select a rating" 
           role="radiogroup" 
           aria-required="true" 
           tabindex="0"
+          name="rating"
         >
-           <li role="radio" data-value="1" aria-checked="false">1</li>
-           <li role="radio" data-value="2" aria-checked="false">2</li>
-           <li role="radio" data-value="3" aria-checked="false">3</li>
-           <li role="radio" data-value="4" aria-checked="false">4</li>
-           <li role="radio" data-value="5" aria-checked="false">5</li>
-        </ul>
+          <div class="radio">  
+            <input type="radio" id="radio1" name="rating" value="1" />
+            <label for="radio1">1</label>
+          </div>
+
+          <div class="radio">
+            <input type="radio" id="radio2" name="rating" value="2" />
+            <label for="radio2">2</label>
+          </div>
+
+          <div class="radio">
+            <input type="radio" id="radio3" name="rating" value="3" />
+            <label for="radio3">3</label>
+          </div>
+
+          <div class="radio">
+            <input type="radio" id="radio4" name="rating" value="4" />
+            <label for="radio4">4</label>
+          </div>
+
+          <div class="radio">
+            <input type="radio" id="radio5" name="rating" value="5" />
+            <label for="radio5">5</label>
+          </div>
+        </fieldset>
         <button id="submit-btn">Submit</button>
        
       </section>
@@ -63,5 +83,5 @@
     <p>Coded by <a href="https://www.frontendmentor.io/profile/SimonaPiz">@SimonaPiz</a>.</p>
   </footer>
 </body>
-<script src="script.js" defer></script>
+<!--script src="script.js" defer></script-->
 </html>
