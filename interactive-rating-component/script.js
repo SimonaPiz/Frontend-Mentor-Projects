@@ -1,65 +1,31 @@
 // -------  toggle checked option for rating status ---------------------------------
 
-const ratingList = document.getElementById('select-rating');
-
 const toggleCheck = (el) => {
   if (!el) return;
-  let checked = el.getAttribute('aria-checked');
-  el.setAttribute('aria-checked', checked == 'true' ? 'false' : 'true');
+  let checked = el.getAttribute('checked');
+  el.setAttribute('checked', checked == 'true' ? 'false' : 'true');
+  el.nextElementSibling.setAttribute('class', checked == 'true' ? '' : 'checked');
 }
 
-function checkClickHandler (event) {
-  let checked = document.querySelector("li[aria-checked='true']");
-  toggleCheck(checked);
-  toggleCheck(event.target);
-}
+// ------ Add input's events -------------------
+const inputs = document.querySelectorAll("input[type='radio']");
 
-function checkKeyHandler (event) {
-  let checked = document.querySelector("li[aria-checked='true']");
-  if (!checked) {
-    checked = event.target.firstElementChild;
+inputs.forEach(input => {
+  // ------ Add hover/focus state for input's labels -------------------
+  input.addEventListener('focusin', (event) => {
+    let checked = document.querySelector("input[checked='true']");
     toggleCheck(checked);
-  } else {
-    //console.log(event.key, checked.getAttribute('value'))
-    let value = checked.getAttribute('data-value');
-
-    switch (event.key) {
-      case 'ArrowDown':
-      case 'ArrowRight':
-        //move ->
-        toggleCheck(checked);
-        if (Number(value) < 5) {
-          toggleCheck(checked.nextElementSibling);
-        } else {
-          toggleCheck(event.target.firstElementChild);
-        }
-        break;
-      case 'ArrowUp':
-      case 'ArrowLeft':
-        //move <-
-        toggleCheck(checked);
-        if (Number(value) > 1) {
-          toggleCheck(checked.previousElementSibling);
-        } else {
-          toggleCheck(event.target.lastElementChild);
-        }
-        break;
-      default: return;
-    }
-  }
-
-}
-
-ratingList.addEventListener('click', checkClickHandler);
-ratingList.addEventListener('keydown', checkKeyHandler);
+    toggleCheck(event.target);
+  })
+});
 
 //--------------- submit valid rating ---------------------------
 const submitBtn = document.getElementById('submit-btn');
 let rating = 0;
 
 const validateRating = () => {
-  let checked = document.querySelector("li[aria-checked='true']");
-  if (checked) rating = Number(checked.getAttribute('data-value'));
+  let checked = document.querySelector("input[checked='true']");
+  if (checked) rating = Number(checked.getAttribute('value'));
   else alert('Please select a value before confirming');
 }
 

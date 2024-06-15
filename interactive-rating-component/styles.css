@@ -143,9 +143,15 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
-input[type="radio"]:checked {
+.checked {
+  color: var(--neutral-dark-blue);
+  transition: all 0.5s ease-in-out;
+}
+
+input:checked, input:focus {
   background-color: var(--neutral-white);
 }
 
@@ -154,7 +160,7 @@ label:hover {
   transition: all 0.5s ease-in-out;
 }
 
-input[type="radio"]:hover, input[type="radio"]:focus, input[type="radio"]:focus-visible, input[type="radio"]:focus-within {
+input[type="radio"]:hover {
   background-color: var(--primary-orange);
   transition: all 0.5s ease-in-out;
 }
