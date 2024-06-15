@@ -96,63 +96,35 @@ Mobile
 ### What I learned
 
 I improved my skills in web accessibility:
-- add aria role, label, selected, ...
+- add aria role, label, use semantic tag, ...
 
-example:
+example html:
 ```html
 ...
-<ul id="select-rating" 
+<fieldset id="select-rating" 
   aria-label="select a rating" 
   role="radiogroup" 
   aria-required="true" 
   tabindex="0"
+  name="rating"
 >
-  <li role="radio" data-value="1" aria-checked="false">1</li>
-  <li role="radio" data-value="2" aria-checked="false">2</li>
-  <li role="radio" data-value="3" aria-checked="false">3</li>
-  <li role="radio" data-value="4" aria-checked="false">4</li>
-  <li role="radio" data-value="5" aria-checked="false">5</li>
-</ul>
+  <div class="radio">  
+    <input type="radio" id="radio1" name="rating" value="1" />
+    <label for="radio1">1</label>
+  </div>
 ...
 ```
 
 - use keyborard to navigate and focus elements in the webpage
 
-example:
+example js:
 ```js
 ...
-function checkKeyHandler (event) {
-  let checked = document.querySelector("li[aria-checked='true']");
-  if (!checked) {
-    checked = event.target.firstElementChild;
-    toggleCheck(checked);
-  } else {
-    let value = checked.getAttribute('data-value');
-
-    switch (event.key) {
-      case 'ArrowDown':
-      case 'ArrowRight':
-        //move ->
-        toggleCheck(checked);
-        if (Number(value) < 5) {
-          toggleCheck(checked.nextElementSibling);
-        } else {
-          toggleCheck(event.target.firstElementChild);
-        }
-        break;
-      case 'ArrowUp':
-      case 'ArrowLeft':
-        //move <-
-        toggleCheck(checked);
-        if (Number(value) > 1) {
-          toggleCheck(checked.previousElementSibling);
-        } else {
-          toggleCheck(event.target.lastElementChild);
-        }
-        break;
-      default: return;
-    }
-  }
+const toggleCheck = (el) => {
+  if (!el) return;
+  let checked = el.getAttribute('checked');
+  el.setAttribute('checked', checked == 'true' ? 'false' : 'true');
+  el.nextElementSibling.setAttribute('class', checked == 'true' ? '' : 'checked');
 }
 ...
 ```
